@@ -12,9 +12,11 @@
         <div v-else-if="command === 'projects'">
           <Projects />
         </div>
+        <div v-else-if="command === 'about'">
+          <About />
+        </div>
         <div v-else>
-          <p>'{{ command }}' is not recognized as an internal or external command,
-            operable program or batch file.</p>
+          <p class="red-text">bash : {{ command }}: command not found</p>
         </div>
       </div>
     </div>
@@ -31,6 +33,7 @@
 import Projects from './Projects.vue';
 import Prompt from './Prompt.vue';
 import Help from './Help.vue';
+import About from './About.vue';
 
 export default {
   name: "Command",
@@ -38,6 +41,7 @@ export default {
     Help,
     Prompt,
     Projects,
+    About,
   },
   data() {
     return {
@@ -51,11 +55,12 @@ export default {
   },
   methods: {
     displayCommandOutput() {
-      if (this.inputValue === "cls") {
+      if (this.inputValue === "clear") {
         this.storeCommand = []; // Clear the storeCommand array
       } else {
-        this.storeCommand.push(this.inputValue);
-        this.previousCommands.push(this.inputValue); // Store the command
+        const command = this.inputValue.toLowerCase(); // Convert input to lowercase
+        this.storeCommand.push(command);
+        this.previousCommands.push(command); // Store the command
         this.currentIndex = this.previousCommands.length; // Update the currentIndex
       }
       this.inputValue = '';

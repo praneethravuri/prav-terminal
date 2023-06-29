@@ -3,7 +3,7 @@
 
     <div class="banner-text m-30">
       <p>PRAV [Version 3.0.0]</p>
-      <p>(c) PRAV Corporation. All rights reserved.</p>
+      <p>(c) PRAV Corporation. All rights reserved 2023.</p>
     </div>
 
 
@@ -13,7 +13,7 @@
 
     <div class="instructions">
       <p>Type 'help' to see a list of available commands</p>
-      <p>Type 'cls' to clear the terminal</p>
+      <p>Type 'clear' to clear the terminal</p>
       <p>Use up and down arrow keys to select previous commands</p>
     </div>
 

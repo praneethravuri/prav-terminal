@@ -1,6 +1,6 @@
 <template>
     <div class="name">
-        <pre v-html="name"></pre>
+        <pre v-html="name" class="green-text"></pre>
     </div>
 </template>
 
@@ -22,4 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
 </style>

@@ -19,15 +19,18 @@ body {
 .main {
     margin: 20px;
 }
-
-// Header color
+// text colors
 
 span {
     color: $white;
 }
 
-.name pre {
-    color: $white;
+.green-text {
+    color: $lime-green;
+}
+
+.red-text{
+    color: red;
 }
 
 // prompt and prompt colors
@@ -37,7 +40,7 @@ span {
 }
 
 // command prompt
-.m-30{
+.m-30 {
     margin: 30px 0px;
 }
 

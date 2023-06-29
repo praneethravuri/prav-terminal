@@ -21,8 +21,13 @@
     data() {
       return {
         commandList: [
-          { commandName: "help", commandDescription: "show list of all available commands" },
-          { commandName: "projects", commandDescription: "show list of all projects" },
+          { commandName: "help", commandDescription: "Show list of all available commands" },
+          {commandName : "about", commandDescription : "Get to know me"},
+          {commandName : "experience", commandDescription : "Where I have worked"},
+          { commandName: "projects", commandDescription: "Show list of all projects" },
+          {commandName : "skills", commandDescription : "List of technologies I have worked with"},
+          {commandName : "contact", commandDescription : "Get my contact information"},
+          {commandName : "resume", commandDescription : "Download my resume"}
         ]
       };
     }
