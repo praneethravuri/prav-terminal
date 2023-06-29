@@ -16,8 +16,14 @@ body {
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+    color: $lime-green;
+}
+
 .main {
     margin: 20px;
+    width: 75%;
 }
 // text colors
 
@@ -31,6 +37,10 @@ span {
 
 .red-text{
     color: red;
+}
+
+.white-text{
+    color: $white;
 }
 
 // prompt and prompt colors

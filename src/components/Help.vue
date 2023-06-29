@@ -7,7 +7,7 @@
         </thead>
         <tbody>
           <tr v-for="command in commandList" :key="command.commandName">
-            <td>{{ command.commandName }}</td>
+            <td class="green-text">{{ command.commandName }}</td>
             <td> - {{ command.commandDescription }}</td>
           </tr>
         </tbody>
@@ -27,7 +27,6 @@
           { commandName: "projects", commandDescription: "Show list of all projects" },
           {commandName : "skills", commandDescription : "List of technologies I have worked with"},
           {commandName : "contact", commandDescription : "Get my contact information"},
-          {commandName : "resume", commandDescription : "Download my resume"}
         ]
       };
     }

@@ -15,6 +15,13 @@
         <div v-else-if="command === 'about'">
           <About />
         </div>
+        <div v-else-if="command === 'experience'">
+          <Experience />
+        </div>
+        <div v-else-if="command === 'contact'">
+          <Contact />
+        </div>
+
         <div v-else>
           <p class="red-text">bash : {{ command }}: command not found</p>
         </div>
@@ -34,6 +41,8 @@ import Projects from './Projects.vue';
 import Prompt from './Prompt.vue';
 import Help from './Help.vue';
 import About from './About.vue';
+import Contact from './Contact.vue';
+import Experience from './Experience.vue';
 
 export default {
   name: "Command",
@@ -42,6 +51,8 @@ export default {
     Prompt,
     Projects,
     About,
+    Contact,
+    Experience
   },
   data() {
     return {
