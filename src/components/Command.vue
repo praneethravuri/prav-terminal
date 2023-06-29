@@ -49,9 +49,11 @@ export default {
         displayCommandOutput() {
             if (this.correctCommands.includes(this.inputValue)) {
                 this.storeCommand.push(this.inputValue);
-            } else {
+            } else if (this.inputValue === "cls") {
                 // Default to Home tab if input doesn't match any condition
-                console.log("invalid option");
+                this.storeCommand = [];
+            } else {
+                console.log("invalid option")
             }
             this.inputValue = '';
         },

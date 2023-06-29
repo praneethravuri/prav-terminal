@@ -1,9 +1,17 @@
 <template>
   <div class="main">
 
+    <div class="banner-text">
+      <p>PRAV [Version 3.0.0]</p>
+      <p>(c) PRAV Corporation. All rights reserved.</p>
+    </div>
+
+
     <div class="header">
       <Header />
     </div>
+
+    <p>Type 'help' to see a list of available commands</p>
 
     <div class="command-prompt">
       <Command />

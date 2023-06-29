@@ -35,16 +35,21 @@ span {
     margin: 10px 0px;
 }
 
+// command prompt
+.command-prompt, .banner-text{
+    margin: 30px 0px;
+}
+
 //input
 input[type=text] {
     background-color: black;
     color: $white;
     border: none;
     font-family: $source-code-pro-font;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 1rem;
 
     &:focus {
         outline: none;
     }
-
 }

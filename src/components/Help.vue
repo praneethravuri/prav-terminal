@@ -5,5 +5,10 @@
 <script>
 export default{
     name : "Help",
+    data(){
+        return {
+            commandList : [""]
+        }
+    }
 }
 </script>
