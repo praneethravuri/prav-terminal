@@ -1,28 +1,27 @@
 <template>
     <div class="projects">
-      <div v-for="project in projects" :key="project.projectName">
-        <p class="green-text">{{ project.projectName }}</p>
-        <p> - {{ project.projectDescription }}</p>
-        <div v-if="project.githubLink && project.websiteLink">
-          <p> - Links:</p>
-          <p> - 
-            <a :href="project.githubLink" target="_blank">GitHub</a> |
-            <a :href="project.websiteLink" target="_blank">Website</a>
-          </p>
+        <div class="sub-project" v-for="project in projects" :key="project.projectName">
+            <p class="green-text">{{ project.projectName }}</p>
+            <p> - {{ project.projectDescription }}</p>
+            <div v-if="project.githubLink && project.websiteLink">
+                <p> - Links:</p>
+                <p> -
+                    <a :href="project.githubLink" target="_blank">[GitHub]</a> |
+                    <a :href="project.websiteLink" target="_blank">[Website]</a>
+                </p>
+            </div>
+            <div v-else-if="project.githubLink">
+                <p>Link:</p>
+                <p><a :href="project.githubLink" target="_blank">[GitHub]</a></p>
+            </div>
+            <div v-else-if="project.websiteLink">
+                <p>Link:</p>
+                <p><a :href="project.websiteLink" target="_blank">[Website]</a></p>
+            </div>
+            <p>Technologies: {{ project.tags.join(", ") }}</p>
         </div>
-        <div v-else-if="project.githubLink">
-          <p>Link:</p>
-          <p><a :href="project.githubLink" target="_blank">GitHub</a></p>
-        </div>
-        <div v-else-if="project.websiteLink">
-          <p>Link:</p>
-          <p><a :href="project.websiteLink" target="_blank">Website</a></p>
-        </div>
-        <p>Technologies: {{ project.tags.join(", ") }}</p>
-        <p>------------------------------------------------------------------------------------------------------------------</p>
-      </div>
     </div>
-  </template>
+</template>
   
 
 <script>
@@ -32,20 +31,20 @@ export default {
         return {
             projects: [
                 {
+                    projectName: "PRAV Terminal",
+                    projectDescription:
+                        "A personal portfolio website designed and functions like a terminal. A single page application with server-side rendering",
+                    githubLink: "https://github.com/praneethravuri/prav-terminal",
+                    websiteLink: "https://prav.dev/",
+                    tags: ["Vue.js", "Javascript", "Scss"],
+                },
+                {
                     projectName: "PRAV V2",
                     projectDescription:
                         "Second iteration of my personal website designed with Vue.js and Scss and hosted on Netlify",
                     githubLink: "https://github.com/praneethravuri/PRAV-V2",
                     websiteLink: "https://prav.dev/",
                     tags: ["Vue.js", "Javascript", "Scss"],
-                },
-                {
-                    projectName: "PRAV",
-                    projectDescription:
-                        "First iteration of my personal website designed on the fly with Sass and Vanilla Javascript and hosted on Netlify",
-                    websiteLink: "https://prav-v1.netlify.app/",
-                    githubLink: "https://github.com/praneethravuri/PRAV",
-                    tags: ["Javascript", "Sass", "jQuery"],
                 },
                 {
                     projectName: "Weatherly",
@@ -65,6 +64,14 @@ export default {
                     githubLink: "https://github.com/praneethravuri/Patriot-Board",
                     websiteLink: "http://mason.gmu.edu/~kdonapat/index",
                     tags: ["Javascript", "Selenium", "jQuery"]
+                },
+                {
+                    projectName: "PRAV",
+                    projectDescription:
+                        "First iteration of my personal website designed on the fly with Sass and Vanilla Javascript and hosted on Netlify",
+                    websiteLink: "https://prav-v1.netlify.app/",
+                    githubLink: "https://github.com/praneethravuri/PRAV",
+                    tags: ["Javascript", "Sass", "jQuery"],
                 },
                 {
                     projectName: "Invespo",
@@ -98,7 +105,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.projects div div{
-    margin: 0;
+.projects {
+
+    & div div {
+        margin: 0;
+    }
+
+    & .sub-project {
+        border-bottom: 2px dashed white;
+        padding-bottom: 10px;
+    }
 }
 </style>

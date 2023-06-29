@@ -42,4 +42,11 @@ export default {
     }
 };
 </script>
-  
+
+
+<style scoped lang="scss">
+.work{
+    padding-bottom: 10px;
+    border-bottom: 2px dashed white;
+}
+</style>
