@@ -15,34 +15,36 @@ body {
     color: $white;
 }
 
-.main{
+.main {
     margin: 20px;
 }
 
 // Header color
 
-span{
-    color : $white;
+span {
+    color: $white;
 }
 
-.name pre{
+.name pre {
     color: $white;
 }
 
 // prompt and prompt colors
 
-.prompt-text{
+.prompt-text {
     margin: 10px 0px;
 }
 
 //input
-input[type=text]{
+input[type=text] {
     background-color: black;
     color: $white;
     border: none;
+    font-family: $source-code-pro-font;
+    font-weight: 600;
 
-    &:focus{
-        border: none;
+    &:focus {
+        outline: none;
     }
 
 }
