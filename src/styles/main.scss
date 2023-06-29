@@ -13,6 +13,7 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     color: $white;
+    text-decoration: none;
 }
 
 .main {
@@ -36,7 +37,7 @@ span {
 }
 
 // command prompt
-.command-prompt, .banner-text{
+.m-30{
     margin: 30px 0px;
 }
 
