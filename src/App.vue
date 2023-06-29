@@ -11,7 +11,11 @@
       <Header />
     </div>
 
-    <p>Type 'help' to see a list of available commands</p>
+    <div class="instructions">
+      <p>Type 'help' to see a list of available commands</p>
+      <p>Type 'cls' to clear the terminal</p>
+      <p>Use up and down arrow keys to select previous commands</p>
+    </div>
 
     <div class="command-prompt m-30">
       <Command />
