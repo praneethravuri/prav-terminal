@@ -43,7 +43,7 @@ export default {
                     projectDescription:
                         "Second iteration of my personal website designed with Vue.js and Scss and hosted on Netlify",
                     githubLink: "https://github.com/praneethravuri/PRAV-V2",
-                    websiteLink: "https://prav.dev/",
+                    websiteLink: "https://prav-v2.netlify.app/",
                     tags: ["Vue.js", "Javascript", "Scss"],
                 },
                 {
