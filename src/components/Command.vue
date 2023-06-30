@@ -30,10 +30,10 @@
 
     <div class="input-prompt">
       <label for="prompt">
-      <Prompt />
-    </label>
-    <input id="command-input" ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
-      @keyup.down="handleDownArrow" autofocus v-model="inputValue" />
+        <Prompt />
+      </label>
+      <input id="command-input" ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
+        @keyup.down="handleDownArrow" autofocus v-model="inputValue" />
     </div>
   </div>
 </template>
@@ -99,6 +99,9 @@ export default {
         this.inputValue = '';
       }
     },
+    scrollToBottom() {
+      this.$refs.inputField?.scrollIntoView({ behavior: 'smooth' });
+    },
   },
   mounted() {
     this.setFocusOnInput();
@@ -106,13 +109,21 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .show-previous-commands div,
 span {
   margin: 30px 0px;
 }
 
-.input-prompt{
-  display: flex;
+@media only screen and (max-width: 600px) {
+  .input-prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-prompt label {
+    margin-bottom: 5px;
+  }
 }
 </style>

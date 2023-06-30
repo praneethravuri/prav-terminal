@@ -1,11 +1,6 @@
 <template>
   <div class="main">
 
-    <div class="banner-text m-30">
-      <p>PRAV [Version 3.0.0]</p>
-      <p>(c) PRAV Corporation. All rights reserved 2023.</p>
-    </div>
-
     <div class="header">
       <Header />
     </div>
