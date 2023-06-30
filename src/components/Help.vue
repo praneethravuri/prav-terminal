@@ -1,7 +1,9 @@
 <template>
-  <div class="help-options" v-for="command in commandList" :key="command.commandName">
-    <p class="green-text">{{ command.commandName }}</p>
-    <p>&nbsp;- {{ command.commandDescription }}</p>
+  <div class="help-options" >
+    <p v-for="command in commandList" :key="command.commandName">
+    <span class="green-text">{{ command.commandName }}</span>
+    <span>&nbsp;- {{ command.commandDescription }}</span>
+    </p>
   </div>
 </template>
   
@@ -23,9 +25,8 @@ export default {
 };
 </script>
   ``
-<style>
-
-.help-options{
-  display: flex;
+<style lang="scss" scoped>
+.help-options span, p{
+  padding: 0;
 }
 </style>

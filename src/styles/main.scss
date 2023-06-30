@@ -33,8 +33,18 @@ a {
 }
 
 .main {
-    margin: 20px;
-    width: 75%;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    border:2px solid $lime-green;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-content{
+    overflow-y: auto;
+    height: 100%;
+    margin: 10px;
 }
 
 // text colors
@@ -83,5 +93,15 @@ input[type=text] {
 
     &:focus {
         outline: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 0.75rem;
+    }
+
+    input[type=text]{
+        font-size: 0.75rem;
     }
 }

@@ -5,7 +5,16 @@
     </div>
 
     <div class="name">
-        <pre v-html="name" class="green-text"></pre>
+        <p v-html="name" class="green-text"></p>
+    </div>
+
+    <div class="instructions">
+        <p> - Type <span class="green-text">help</span> to see a list of available commands</p>
+        <p> - Type <span class="green-text">clear</span> to clear the terminal</p>
+        <p> - Use <span class="green-text">up</span> and <span class="green-text">down</span> arrow keys to select previous
+            commands</p>
+        <p> - Click on <span class="green-text">prompt</span> to refresh the page</p>
+        <p> - You can type a command even when the input is out of focus</p>
     </div>
 </template>
 
@@ -27,14 +36,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-pre {
-    margin: 0;
-    padding: 0;
-}
 
-@media only screen and (max-width: 600px) {
-    pre{
-        font-size: 10px;
-    }
-}
 </style>

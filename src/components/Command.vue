@@ -99,9 +99,6 @@ export default {
         this.inputValue = '';
       }
     },
-    scrollToBottom() {
-      this.$refs.inputField?.scrollIntoView({ behavior: 'smooth' });
-    },
   },
   mounted() {
     this.setFocusOnInput();

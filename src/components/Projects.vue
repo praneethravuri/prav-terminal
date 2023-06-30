@@ -1,6 +1,6 @@
 <template>
     <div class="projects">
-        <div class="sub-project" v-for="project in projects" :key="project.projectName">
+        <div class="sub-project m-30" v-for="project in projects" :key="project.projectName">
             <p class="green-text">{{ project.projectName }}</p>
             <p> - {{ project.projectDescription }}</p>
             <div v-if="project.githubLink && project.websiteLink">
