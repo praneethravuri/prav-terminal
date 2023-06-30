@@ -31,7 +31,7 @@
     <label for="prompt">
       <Prompt />
     </label>
-    <input ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
+    <input id="command-input" ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
       @keyup.down="handleDownArrow" autofocus v-model="inputValue" />
   </div>
 </template>
