@@ -1,6 +1,5 @@
 <template>
     <div class="hello-ascii">
-        <pre v-html="hello" class="green-text"></pre>
         <p>My name is Praneeth Ravuri, and I love developing websites. I began my journey in 2020 during
             the COVID lockdown, starting with Python and creating small projects. I quickly gained a strong understanding of
             the language and used it to build bots for scraping e-commerce websites.
@@ -20,33 +19,8 @@
 <script>
 export default {
     name: "About",
-    data() {
-        return {
-            hello: `
-███  ███  ███
-███  ███     
-███  ███  ███
-███▄▄███  ███
-████████  ███
-███▀▀███  ███
-███  ███  ███
-███  ███  ███
-███  ███  ███
-            `,
-        }
-    }
 }
 </script>
 
 <style lang="scss" scoped>
-.hello-ascii {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & pre,
-    p {
-        padding: 10px;
-    }
-}
 </style>

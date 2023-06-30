@@ -1,5 +1,5 @@
 <template>
-  <div class="terminal-input">
+  <div class="terminal-output">
     <div class="show-previous-commands" id="prev-commands">
       <div v-for="(command, i) in storeCommand" :key="i">
         <span>
@@ -23,16 +23,18 @@
         </div>
 
         <div v-else>
-          <p class="red-text">bash : {{ command }}: command not found</p>
+          <p class="red-text">Invalid command : '{{ command }}'</p>
         </div>
       </div>
     </div>
 
-    <label for="prompt">
+    <div class="input-prompt">
+      <label for="prompt">
       <Prompt />
     </label>
     <input id="command-input" ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
       @keyup.down="handleDownArrow" autofocus v-model="inputValue" />
+    </div>
   </div>
 </template>
 
@@ -108,5 +110,9 @@ export default {
 .show-previous-commands div,
 span {
   margin: 30px 0px;
+}
+
+.input-prompt{
+  display: flex;
 }
 </style>
