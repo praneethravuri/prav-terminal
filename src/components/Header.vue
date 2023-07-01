@@ -54,6 +54,28 @@ export default {
 .name div {
     width: 10px;
 }
+.ascii,
+.ascii-art {
+    font-size: 16px;
+    line-height: 1.25;
+}
 
+@media screen and (max-width: 800px) {
+
+.ascii, .ascii-art {
+    font-size: 8px;
+    line-height: 1.25;
+
+}
+}
+
+@media screen and (max-width: 600px) {
+
+.ascii,
+.ascii-art {
+    font-size: 5px;
+
+}
+}
 
 </style>
