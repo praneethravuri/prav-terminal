@@ -1,4 +1,5 @@
 <template>
+  <p>Welcome! Here are all the available commands: </p>
   <div class="help-options">
     <p v-for="command in commandList" :key="command.commandName">
       <span class="color-orange">{{ command.commandName }}</span>
@@ -19,7 +20,8 @@ export default {
           { commandName: "projects", commandDescription: "Lists all the projects I have worked on" },
           { commandName: "contact", commandDescription: "Shares my contact information" },
           { commandName: "education", commandDescription: "Shows where I have studied" },
-          { commandName: "joke", commandDescription: "Generates a random programming joke" }
+          { commandName: "joke", commandDescription: "Generates a random programming joke" },
+          { commandName: "repo", commandDescription: "Open this project's github repository" }
       ]
     };
   }

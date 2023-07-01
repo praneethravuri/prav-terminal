@@ -74,7 +74,7 @@ export default {
       inputValue: '',
       currentTab: '',
       storeCommand: [],
-      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke"],
+      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke", "education"],
       currentIndex: -1,
       previousCommands: [],
     };
@@ -89,6 +89,8 @@ export default {
     displayCommandOutput() {
       if (this.inputValue === "clear") {
         this.storeCommand = []; // Clear the storeCommand array
+      } else if (this.inputValue.toLowerCase().trim() === "repo") {
+        window.open("https://github.com/praneethravuri/prav-terminal", "_blank"); // Open new window with google.com
       } else {
         const command = this.inputValue.toLowerCase().trim(); // Convert input to lowercase
         this.storeCommand.push(command);

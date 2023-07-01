@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: $navy;
+    background-color: $black;
     font-family: $source-code-pro-font;
     font-weight: 600;
     font-size: 16px;
@@ -25,14 +25,19 @@ body {
 html,
 body {
     scrollbar-width: thin;
-    scrollbar-color: $orange $navy;
+    scrollbar-color: $orange $black;
 }
 
 // tags
 
 a {
     text-decoration: none;
-    color: $yellow;
+    color: $turquoise-blue;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: $yellow;
+    }
 }
 
 span {
@@ -40,7 +45,7 @@ span {
 }
 
 input[type=text] {
-    background-color: $navy;
+    background-color: $black;
     border: none;
     font-family: $source-code-pro-font;
     font-weight: 400;
@@ -69,7 +74,7 @@ input[type=text] {
 
 // text colors
 .color {
-    &-green {
+    &-lime-green {
         color: $lime-green;
     }
 
@@ -115,6 +120,10 @@ input[type=text] {
 
     &-turq-blue{
         color: $turquoise-blue;
+    }
+
+    &-bright-blue{
+        color: $bright-blue;
     }
 }
 
