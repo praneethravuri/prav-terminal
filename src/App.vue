@@ -2,12 +2,12 @@
   <div>
     <div class="main">
 
-      <div class="main-content">
+      <div class="main-content" id="mainContent">
         <div class="header">
           <Header />
         </div>
 
-        <div class="command-prompt m-30">
+        <div class="command-prompt m-30" id="commandPrompt">
           <Command />
         </div>
       </div>

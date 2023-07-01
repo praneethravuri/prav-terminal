@@ -1,5 +1,5 @@
 <template>
-    <div class="hello-ascii">
+    <div>
         <p>My name is Praneeth Ravuri, and I love developing websites. I began my journey in 2020 during
             the COVID lockdown, starting with Python and creating small projects. I quickly gained a strong understanding of
             the language and used it to build bots for scraping e-commerce websites.
@@ -21,6 +21,3 @@ export default {
     name: "About",
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

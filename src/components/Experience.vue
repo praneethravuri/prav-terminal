@@ -1,7 +1,7 @@
 <template>
     <div class="generate-exp">
         <div class="work" v-for="exp in experience" :key="exp.company">
-            <p class="green-text">{{ exp.position }} @ {{ exp.company }}</p>
+            <p class="color-green">{{ exp.position }} @ {{ exp.company }}</p>
             <p>- {{ exp.dateRange }}</p>
             <p>- {{ exp.location }}</p>
             <div class="work-content" v-for="content in exp.content" :key="content" style="margin: 0;">

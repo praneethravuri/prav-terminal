@@ -1,23 +1,27 @@
 <template>
     <div class="banner-text">
-        <p><Prompt /> (c) PRAV. All rights reserved 2023.</p>
+        <p>
+            <Prompt /> (c) PRAV. All rights reserved 2023.
+        </p>
         <p>
             <span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> /
             <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/" target="_blank">LinkedIn</a></span> /
             <span><a href="mailto:prav2500@gmail.com">Email</a></span> /
-            <span><a href="https://drive.google.com/file/d/1AiUdUmqhrWz8wlmGVeOhDD2Pr5CBxW7C/view" target="_blank">Resume</a></span>
+            <span><a href="https://drive.google.com/file/d/1AiUdUmqhrWz8wlmGVeOhDD2Pr5CBxW7C/view"
+                    target="_blank">Resume</a></span>
         </p>
     </div>
 
     <div class="ascii">
-        <pre id="ascii-art" class="green-text">{{ name }}</pre>
+        <pre id="ascii-art" class="color-green">{{ name }}</pre>
     </div>
 
     <div class="instructions">
-        <p> - Type <span class="green-text">help</span> to see a list of available commands</p>
-        <p> - Type <span class="green-text">clear</span> to clear the terminal</p>
-        <p> - Use <span class="green-text">up</span> and <span class="green-text">down</span> arrow keys to select previous commands</p>
-        <p> - Click on <span class="green-text">prompt</span> to refresh the page</p>
+        <p> - Type <span class="color-green">help</span> to see a list of available commands</p>
+        <p> - Type <span class="color-green">clear</span> to clear the terminal</p>
+        <p> - Use <span class="color-green">up</span> and <span class="color-green">down</span> arrow keys to select
+            previous commands</p>
+        <p> - Click on <span class="color-green">prompt</span> to refresh the page</p>
         <p> - You can type a command even when the input is out of focus</p>
     </div>
 </template>
@@ -40,16 +44,14 @@ export default {
 ██████╔╝██████╔╝███████║██╔██╗██║█████╗░░█████╗░░░░░██║░░░███████║  ██████╔╝███████║╚██╗░██╔╝██║░░░██║██████╔╝██║
 ██╔═══╝░██╔══██╗██╔══██║██║╚████║██╔══╝░░██╔══╝░░░░░██║░░░██╔══██║  ██╔══██╗██╔══██║░╚████╔╝░██║░░░██║██╔══██╗██║
 ██║░░░░░██║░░██║██║░░██║██║░╚███║███████╗███████╗░░░██║░░░██║░░██║  ██║░░██║██║░░██║░░╚██╔╝░░╚██████╔╝██║░░██║██║
-╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝  ╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚═╝ V 3.19.2`,
+╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝  ╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚═╝ V 3.20.2`,
         };
     },
 };
 </script>
 
 <style lang="scss" scoped>
-
-.name div{
+.name div {
     width: 10px;
 }
-
 </style>

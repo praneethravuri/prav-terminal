@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <div class="sub-project m-30" v-for="project in projects" :key="project.projectName">
-            <p class="green-text">{{ project.projectName }}</p>
+            <p class="color-green">{{ project.projectName }}</p>
             <p> - {{ project.projectDescription }}</p>
             <div v-if="project.githubLink && project.websiteLink">
                 <p> - Links: <span> <a :href="project.githubLink" target="_blank">[GitHub]</a> |
@@ -13,7 +13,7 @@
             <div v-else-if="project.websiteLink">
                 <p> - Link: <span><a :href="project.websiteLink" target="_blank">[Website]</a></span></p>
             </div>
-            <p> - Technologies: <span class="tech-tags">{{ project.tags.join(", ") }}</span></p>
+            <p> - Technologies: <span class="color-purple">{{ project.tags.join(", ") }}</span></p>
         </div>
     </div>
 </template>

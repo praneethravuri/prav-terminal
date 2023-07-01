@@ -1,7 +1,7 @@
 <template>
   <div class="help-options" >
     <p v-for="command in commandList" :key="command.commandName">
-    <span class="green-text">{{ command.commandName }}</span>
+    <span class="color-green">{{ command.commandName }}</span>
     <span>&nbsp;- {{ command.commandDescription }}</span>
     </p>
   </div>

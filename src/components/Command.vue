@@ -23,7 +23,7 @@
         </div>
 
         <div v-else>
-          <p>Invalid command : <span class="red-text">'{{ command }}'</span>. Try <span class="green-text">'help'</span> to get started</p>
+          <p>Invalid command : <span class="red-text">'{{ command }}'</span>. Try <span class="color-green">'help'</span> to get started</p>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
       <label for="prompt">
         <Prompt />
       </label>
-      <input id="command-input" :class="{ 'red-text': !isCommandCorrect, 'white-text' : isCommandCorrect }" ref="inputField" type="text"
+      <input id="command-input" :class="{ 'color-red': !isCommandCorrect, 'color-white' : isCommandCorrect }" ref="inputField" type="text"
         @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
         v-model="inputValue" />
     </div>

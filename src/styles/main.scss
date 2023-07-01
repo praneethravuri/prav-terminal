@@ -1,5 +1,6 @@
 @import "./variables";
 
+// body, *, root, html
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,64 +28,17 @@ body {
     scrollbar-color: $lime-green black;
 }
 
+// tags
+
 a {
     text-decoration: none;
     color: $bright-blue;
 }
 
-.main {
-    margin: 15px auto;
-    width: 99%;
-    height: 95vh;
-    border:2px solid $lime-green;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.main-content{
-    overflow-y: auto;
-    height: 100%;
-    margin: 10px;
-}
-
-// text colors
-
 span {
     color: $white;
 }
 
-.green-text {
-    color: $lime-green;
-}
-
-.red-text {
-    color: red;
-}
-
-.yellow-text {
-    color: yellow;
-}
-
-.white-text {
-    color: $white;
-}
-
-.tech-tags{
-    color: $bright-purple;
-}
-
-// prompt and prompt colors
-
-.prompt-text {
-    margin: 10px 0px;
-}
-
-// command prompt
-.m-30 {
-    margin: 30px 0px;
-}
-
-//input
 input[type=text] {
     background-color: black;
     border: none;
@@ -98,27 +52,83 @@ input[type=text] {
     }
 }
 
+.main {
+    margin: 15px auto;
+    width: 99%;
+    height: 95vh;
+    border: 2px solid $lime-green;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &-content {
+        overflow-y: auto;
+        height: 100%;
+        margin: 10px;
+    }
+}
+
+// text colors
+.color {
+    &-green {
+        color: $lime-green;
+    }
+
+    &-red {
+        color: red;
+    }
+
+    &-yellow {
+        color: yellow;
+    }
+
+    &-white {
+        color: $white;
+    }
+
+    &-purple {
+        color: $bright-purple;
+    }
+}
+
+// prompt and prompt colors
+
+.prompt-text {
+    margin: 10px 0px;
+}
+
+// command prompt
+.m-30 {
+    margin: 30px 0px;
+}
+
+// responsive media queries
+
 @media only screen and (max-width: 600px) {
-    body{
+    body {
         font-size: 0.75rem;
     }
 
-    input[type=text]{
+    input[type=text] {
         font-size: 0.75rem;
     }
 }
 
 
 @media screen and (max-width: 800px) {
-    .ascii, #loading-ascii-art {
+
+    .ascii,
+    #loading-ascii-art {
         font-size: 8px;
         line-height: 1.25;
-        
+
     }
 }
+
 @media screen and (max-width: 600px) {
-    .ascii, .ascii-art{
+
+    .ascii,
+    .ascii-art {
         font-size: 5px;
-        
+
     }
 }
