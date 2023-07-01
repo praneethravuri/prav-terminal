@@ -1,5 +1,5 @@
 <template>
-    <a href="" style="text-decoration: none;" class="color-electric-green">
+    <a href="https://prav.dev/" style="text-decoration: none;" class="color-electric-green">
         prav@portfolio:$ ~
     </a>
 </template>
