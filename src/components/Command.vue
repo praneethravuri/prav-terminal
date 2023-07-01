@@ -29,7 +29,7 @@
         </div>
 
         <div v-else>
-          <p>Invalid command : <span class="color-purple">'{{ command }}'</span>. Try <span
+          <p><span class="color-pink-red">Invalid command : '{{ command }}'</span>. Try <span
               class="color-orange">'help'</span> to get started</p>
         </div>
       </div>
