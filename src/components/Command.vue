@@ -24,6 +24,9 @@
         <div v-else-if="command === 'joke'">
           <Joke />
         </div>
+        <div v-else-if="command === 'education'">
+          <Education />
+        </div>
 
         <div v-else>
           <p>Invalid command : <span class="color-purple">'{{ command }}'</span>. Try <span
@@ -52,6 +55,7 @@ import About from './About.vue';
 import Contact from './Contact.vue';
 import Experience from './Experience.vue';
 import Joke from './Joke.vue';
+import Education from "./Education.vue";
 
 export default {
   name: "Command",
@@ -62,7 +66,8 @@ export default {
     About,
     Contact,
     Experience,
-    Joke
+    Joke,
+    Education
   },
   data() {
     return {

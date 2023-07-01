@@ -18,6 +18,7 @@ export default {
           { commandName: "experience", commandDescription: "Shows my work experience" },
           { commandName: "projects", commandDescription: "Lists all the projects I have worked on" },
           { commandName: "contact", commandDescription: "Shares my contact information" },
+          { commandName: "education", commandDescription: "Shows where I have studied" },
           { commandName: "joke", commandDescription: "Generates a random programming joke" }
       ]
     };
