@@ -54,4 +54,8 @@ export default {
 .name div {
     width: 10px;
 }
+
+.ascii {
+    font-size: 16px;
+}
 </style>

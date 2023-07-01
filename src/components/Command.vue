@@ -32,7 +32,7 @@
       <label for="prompt">
         <Prompt />
       </label>
-      <input form="user-input" id="command-input" :class="{ 'color-pink-red': !isCommandCorrect, 'color-white' : isCommandCorrect }" ref="inputField" type="text"
+      <input aria-labelledby="input-prompt" id="command-input" :class="{ 'color-pink-red': !isCommandCorrect, 'color-white' : isCommandCorrect }" ref="inputField" type="text"
         @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
         v-model="inputValue" />
     </div>
