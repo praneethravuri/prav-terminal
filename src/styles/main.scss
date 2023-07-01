@@ -56,7 +56,7 @@ input[type=text] {
     margin: 15px auto;
     width: 99%;
     height: 95vh;
-    border: 2px solid $orange;
+    border: 3px solid $orange;
     border-radius: 8px;
     overflow: hidden;
 
@@ -107,6 +107,10 @@ input[type=text] {
 
     &-brown {
         color: $brown
+    }
+
+    &-pink{
+        color: $pink;
     }
 }
 

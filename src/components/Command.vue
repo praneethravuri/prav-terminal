@@ -21,6 +21,9 @@
         <div v-else-if="command === 'contact'">
           <Contact />
         </div>
+        <div v-else-if="command === 'joke'">
+          <Joke />
+        </div>
 
         <div v-else>
           <p>Invalid command : <span class="color-purple">'{{ command }}'</span>. Try <span
@@ -48,6 +51,7 @@ import Help from './Help.vue';
 import About from './About.vue';
 import Contact from './Contact.vue';
 import Experience from './Experience.vue';
+import Joke from './Joke.vue';
 
 export default {
   name: "Command",
@@ -57,14 +61,15 @@ export default {
     Projects,
     About,
     Contact,
-    Experience
+    Experience,
+    Joke
   },
   data() {
     return {
       inputValue: '',
       currentTab: '',
       storeCommand: [],
-      correctCommands: ["help", "projects", "about", "experience", "contact", "clear"],
+      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke"],
       currentIndex: -1,
       previousCommands: [],
     };

@@ -12,7 +12,7 @@
         </p>
     </div>
 
-    <div class="ascii">
+    <div class="ascii m-30">
         <pre id="ascii-art" class="color-orange">{{ name }}</pre>
     </div>
 

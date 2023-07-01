@@ -1,8 +1,8 @@
 <template>
-  <div class="help-options" >
+  <div class="help-options">
     <p v-for="command in commandList" :key="command.commandName">
-    <span class="color-orange">{{ command.commandName }}</span>
-    <span>&nbsp;- {{ command.commandDescription }}</span>
+      <span class="color-orange">{{ command.commandName }}</span>
+      <span>&nbsp;- {{ command.commandDescription }}</span>
     </p>
   </div>
 </template>
@@ -13,12 +13,12 @@ export default {
   data() {
     return {
       commandList: [
-        { commandName: "help", commandDescription: "Show list of all available commands" },
-        { commandName: "about", commandDescription: "Get to know me" },
-        { commandName: "experience", commandDescription: "Where I have worked" },
-        { commandName: "projects", commandDescription: "Show list of all projects" },
-        /* { commandName: "skills", commandDescription: "List of technologies I have worked with" }, */
-        { commandName: "contact", commandDescription: "Get my contact information" },
+          { commandName: "help", commandDescription: "Displays a list of all available commands" },
+          { commandName: "about", commandDescription: "Provides information about me" },
+          { commandName: "experience", commandDescription: "Shows my work experience" },
+          { commandName: "projects", commandDescription: "Lists all the projects I have worked on" },
+          { commandName: "contact", commandDescription: "Shares my contact information" },
+          { commandName: "joke", commandDescription: "Generates a random programming joke" }
       ]
     };
   }
@@ -26,7 +26,8 @@ export default {
 </script>
   ``
 <style lang="scss" scoped>
-.help-options span, p{
+.help-options span,
+p {
   padding: 0;
 }
 </style>
