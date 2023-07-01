@@ -109,9 +109,6 @@ export default {
         this.inputValue = '';
       }
     },
-    autoComplete() {
-
-    }
   },
   mounted() {
     this.setFocusOnInput();

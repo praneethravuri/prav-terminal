@@ -22,7 +22,7 @@
         <p> - Use <span class="color-orange">up</span> and <span class="color-orange">down</span> arrow keys to select
             previous commands</p>
         <p> - Click on <span class="color-orange">prompt</span> to refresh the page</p>
-<!--         <p> - You can type a command even when the input is out of focus</p> -->
+        <p> - Commands can be typed even if the input is out of focus</p>
         <p> - Press on <span class="color-orange">tab</span> key to auto complete the command</p>
     </div>
 </template>
@@ -55,6 +55,7 @@ export default {
 .name div {
     width: 10px;
 }
+
 .ascii,
 .ascii-art {
     font-size: 16px;
@@ -63,20 +64,20 @@ export default {
 
 @media screen and (max-width: 800px) {
 
-.ascii, .ascii-art {
-    font-size: 8px;
-    line-height: 1.25;
+    .ascii,
+    .ascii-art {
+        font-size: 8px;
+        line-height: 1.25;
 
-}
+    }
 }
 
 @media screen and (max-width: 600px) {
 
-.ascii,
-.ascii-art {
-    font-size: 5px;
+    .ascii,
+    .ascii-art {
+        font-size: 5px;
 
+    }
 }
-}
-
 </style>

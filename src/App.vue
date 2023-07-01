@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="main">
+    <div class="main" id="main">
 
       <div class="main-content" id="mainContent">
         <div class="header">
@@ -26,7 +26,13 @@ export default {
     Header,
     Command
   },
+  mounted() {
+    document.getElementById("mainContent").addEventListener("keypress", function (event) {
+      document.getElementById("command-input").focus();
+    });
+  }
 }
+
 </script>
 
 <style scoped lang="scss">
