@@ -23,7 +23,8 @@
         </div>
 
         <div v-else>
-          <p>Invalid command : <span class="color-purple">'{{ command }}'</span>. Try <span class="color-orange">'help'</span> to get started</p>
+          <p>Invalid command : <span class="color-purple">'{{ command }}'</span>. Try <span
+              class="color-orange">'help'</span> to get started</p>
         </div>
       </div>
     </div>
@@ -32,7 +33,8 @@
       <label for="prompt">
         <Prompt />
       </label>
-      <input aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input" :class="{ 'color-pink-red': !isCommandCorrect, 'color-white' : isCommandCorrect }" ref="inputField" type="text"
+      <input aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
+        :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }" ref="inputField" type="text"
         @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
         v-model="inputValue" />
     </div>
@@ -83,6 +85,7 @@ export default {
         this.previousCommands.push(command); // Store the command
         this.currentIndex = this.previousCommands.length; // Update the currentIndex
       }
+      
       this.inputValue = '';
       this.$nextTick(() => {
         this.setFocusOnInput();
@@ -123,7 +126,7 @@ span {
   .input-prompt {
     display: flex;
 
-    & input[type=text]{
+    & input[type=text] {
       margin-left: 5px;
     }
   }
