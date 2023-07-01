@@ -1,7 +1,11 @@
 <template>
     <div class="banner-text">
-        <p>PRAV</p>
-        <p>(c) PRAV Corporation. All rights reserved 2023.</p>
+        <p><Prompt /> (c) PRAV. All rights reserved 2023.</p>
+        <p class="m-30"><span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> / <span><a
+                    href="https://www.linkedin.com/in/praneeth-ravuri2500/" target="_blank">LinkedIn</a></span> / <span><a
+                    href="mailto:prav2500@gmail.com">Email</a></span> / <span><a
+                    href="https://drive.google.com/file/d/1AiUdUmqhrWz8wlmGVeOhDD2Pr5CBxW7C/view"
+                    target="_blank">Resume</a></span></p>
     </div>
 
     <div class="name">
@@ -19,8 +23,14 @@
 </template>
 
 <script>
+
+import Prompt from './Prompt.vue';
+
 export default {
     name: "Header",
+    components: {
+        Prompt
+    },
     data() {
         return {
             name: `
@@ -29,12 +39,10 @@ export default {
 ██████╔╝██████╔╝███████║██╔██╗██║█████╗░░█████╗░░░░░██║░░░███████║  ██████╔╝███████║╚██╗░██╔╝██║░░░██║██████╔╝██║
 ██╔═══╝░██╔══██╗██╔══██║██║╚████║██╔══╝░░██╔══╝░░░░░██║░░░██╔══██║  ██╔══██╗██╔══██║░╚████╔╝░██║░░░██║██╔══██╗██║
 ██║░░░░░██║░░██║██║░░██║██║░╚███║███████╗███████╗░░░██║░░░██║░░██║  ██║░░██║██║░░██║░░╚██╔╝░░╚██████╔╝██║░░██║██║
-╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝  ╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚═╝ V 3.18.0`,
+╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝╚══════╝░░░╚═╝░░░╚═╝░░╚═╝  ╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚═╝ V 3.19.0`,
         };
     },
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

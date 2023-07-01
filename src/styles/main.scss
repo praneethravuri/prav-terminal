@@ -29,7 +29,7 @@ body {
 
 a {
     text-decoration: none;
-    color: $lime-green;
+    color: $bright-blue;
 }
 
 .main {
@@ -69,6 +69,10 @@ span {
     color: $white;
 }
 
+.tech-tags{
+    color: $bright-purple;
+}
+
 // prompt and prompt colors
 
 .prompt-text {
@@ -88,7 +92,6 @@ input[type=text] {
     font-family: $source-code-pro-font;
     font-weight: 400;
     font-size: 1rem;
-    width: 75%;
     font-weight: 600;
 
     &:focus {

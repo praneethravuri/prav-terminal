@@ -1,6 +1,6 @@
 <template>
     <div v-for="contact in contactInfo" :key="contact.contactName">
-        <p class="green-text">[{{ contact.contactName }}]: <span><a target="_blank" :href="getContactLink(contact)" class="white-text">{{ contact.contactLink }}</a></span></p>
+        <p>[{{ contact.contactName }}]: <span><a target="_blank" :href="getContactLink(contact)">{{ contact.contactLink }}</a></span></p>
     </div>
 </template>
 

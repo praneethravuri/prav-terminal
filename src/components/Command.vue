@@ -115,12 +115,6 @@ span {
 @media only screen and (max-width: 600px) {
   .input-prompt {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .input-prompt label {
-    margin-bottom: 5px;
   }
 }
 </style>
