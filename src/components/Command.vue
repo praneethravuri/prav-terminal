@@ -23,7 +23,7 @@
         </div>
 
         <div v-else>
-          <p class="red-text">Invalid command : '{{ command }}'</p>
+          <p>Invalid command : <span class="red-text">'{{ command }}'</span>. Try <span class="green-text">'help'</span> to get started</p>
         </div>
       </div>
     </div>
@@ -32,8 +32,9 @@
       <label for="prompt">
         <Prompt />
       </label>
-      <input id="command-input" ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
-        @keyup.down="handleDownArrow" autofocus v-model="inputValue" />
+      <input id="command-input" :class="{ 'red-text': !isCommandCorrect, 'white-text' : isCommandCorrect }" ref="inputField" type="text"
+        @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
+        v-model="inputValue" />
     </div>
   </div>
 </template>
@@ -61,10 +62,16 @@ export default {
       inputValue: '',
       currentTab: '',
       storeCommand: [],
-      correctCommands: ["help", "projects"],
+      correctCommands: ["help", "projects", "about", "experience", "contact", "clear"],
       currentIndex: -1,
       previousCommands: [],
     };
+  },
+  computed: {
+    isCommandCorrect() {
+      const command = this.inputValue.toLowerCase();
+      return this.correctCommands.includes(command);
+    },
   },
   methods: {
     displayCommandOutput() {
@@ -115,6 +122,10 @@ span {
 @media only screen and (max-width: 600px) {
   .input-prompt {
     display: flex;
+
+    & input[type=text]{
+      margin-left: 5px;
+    }
   }
 }
 </style>

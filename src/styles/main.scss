@@ -87,7 +87,6 @@ span {
 //input
 input[type=text] {
     background-color: black;
-    color: $white;
     border: none;
     font-family: $source-code-pro-font;
     font-weight: 400;
@@ -106,5 +105,20 @@ input[type=text] {
 
     input[type=text]{
         font-size: 0.75rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .ascii, #loading-ascii-art {
+        font-size: 8px;
+        line-height: 1.25;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .ascii, .ascii-art{
+        font-size: 5px;
+        
     }
 }

@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/prav-v2/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/7c10129e-1ec7-46b2-8752-d3b9912f108d/deploy-status" />
+  <a href="https://app.netlify.com/sites/prav-terminal/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/0b8a8d57-f61b-4c22-965e-f2c6673360ad/deploy-status" />
   </a>
 </p>
 
@@ -48,6 +48,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | Lime Green          | ![#32CD32](https://via.placeholder.com/10/32CD32?text=+) `#32CD32` |
 | White   | ![#F7F7F7](https://via.placeholder.com/10/F7F7F7?text=+) `#F7F7F7` |
 | Black   | ![#000000](https://via.placeholder.com/10/000000?text=+) `#000000` |
+| Bright Blue   | ![#0096FF](https://via.placeholder.com/10/0096FF?text=+) `#0096FF` |
+| Bright Purple   | ![#BF40BF](https://via.placeholder.com/10/BF40BF?text=+) `#BF40BF` |
 
 
 
