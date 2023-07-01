@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <div class="sub-project m-30" v-for="project in projects" :key="project.projectName">
-            <p class="color-green">{{ project.projectName }}</p>
+            <p class="color-orange">{{ project.projectName }}</p>
             <p> - {{ project.projectDescription }}</p>
             <div v-if="project.githubLink && project.websiteLink">
                 <p> - Links: <span> <a :href="project.githubLink" target="_blank">[GitHub]</a> |
@@ -13,7 +13,7 @@
             <div v-else-if="project.websiteLink">
                 <p> - Link: <span><a :href="project.websiteLink" target="_blank">[Website]</a></span></p>
             </div>
-            <p> - Technologies: <span class="color-purple">{{ project.tags.join(", ") }}</span></p>
+            <p> - Technologies: <span class="color-green">{{ project.tags.join(", ") }}</span></p>
         </div>
     </div>
 </template>
@@ -28,7 +28,7 @@ export default {
                 {
                     projectName: "PRAV Terminal",
                     projectDescription:
-                        "A personal portfolio website designed and functions like a terminal. A single page application with server-side rendering",
+                        "A retro and terminal themed website made with Vue.js and Scss. This single page application behaves like a terminal and has server-side-rendering",
                     githubLink: "https://github.com/praneethravuri/prav-terminal",
                     websiteLink: "https://prav.dev/",
                     tags: ["Vue.js", "Javascript", "Scss"],

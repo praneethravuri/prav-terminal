@@ -13,15 +13,15 @@
     </div>
 
     <div class="ascii">
-        <pre id="ascii-art" class="color-green">{{ name }}</pre>
+        <pre id="ascii-art" class="color-orange">{{ name }}</pre>
     </div>
 
     <div class="instructions">
-        <p> - Type <span class="color-green">help</span> to see a list of available commands</p>
-        <p> - Type <span class="color-green">clear</span> to clear the terminal</p>
-        <p> - Use <span class="color-green">up</span> and <span class="color-green">down</span> arrow keys to select
+        <p> - Type <span class="color-orange">help</span> to see a list of available commands</p>
+        <p> - Type <span class="color-orange">clear</span> to clear the terminal</p>
+        <p> - Use <span class="color-orange">up</span> and <span class="color-orange">down</span> arrow keys to select
             previous commands</p>
-        <p> - Click on <span class="color-green">prompt</span> to refresh the page</p>
+        <p> - Click on <span class="color-orange">prompt</span> to refresh the page</p>
         <p> - You can type a command even when the input is out of focus</p>
     </div>
 </template>

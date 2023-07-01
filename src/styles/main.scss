@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: $navy;
     font-family: $source-code-pro-font;
     font-weight: 600;
     font-size: 1rem;
@@ -25,22 +25,22 @@ body {
 html,
 body {
     scrollbar-width: thin;
-    scrollbar-color: $lime-green black;
+    scrollbar-color: $orange $navy;
 }
 
 // tags
 
 a {
     text-decoration: none;
-    color: $bright-blue;
+    color: $yellow;
 }
 
 span {
-    color: $white;
+    color: $off-white;
 }
 
 input[type=text] {
-    background-color: black;
+    background-color: $navy;
     border: none;
     font-family: $source-code-pro-font;
     font-weight: 400;
@@ -56,7 +56,7 @@ input[type=text] {
     margin: 15px auto;
     width: 99%;
     height: 95vh;
-    border: 2px solid $lime-green;
+    border: 2px solid $orange;
     border-radius: 8px;
     overflow: hidden;
 
@@ -87,6 +87,26 @@ input[type=text] {
 
     &-purple {
         color: $bright-purple;
+    }
+
+    &-orange{
+        color: $orange;
+    }
+
+    &-teal{
+        color: $teal;
+    }
+
+    &-electric-green{
+        color: $electric-green;
+    }
+
+    &-pink-red{
+        color: $pink-red;
+    }
+
+    &-brown{
+        color: $brown
     }
 }
 

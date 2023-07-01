@@ -1,3 +1,7 @@
+<p align="center">
+<img alt = "website preview" src = "./banner.png">
+</p>
+
 # Prav Terminal - Portfolio Website
 
 
@@ -17,6 +21,8 @@
 </h3>
 
 ### [https://prav.dev/](https://prav.dev/)
+
+Inspired By - [Yassine Fathi](https://term.m4tt72.com/)
 
 ## Project setup
 ```

@@ -21,3 +21,11 @@ export default {
     name: "About",
 }
 </script>
+
+<style lang="scss" scoped>
+div{
+    width: 75%;
+}
+
+
+</style>
