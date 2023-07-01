@@ -9,9 +9,6 @@ export const createApp = () => {
    * and send it to the user to do the hydration process
    */
   const app = createSSRApp(App);
-
-  app.config.errorHandler = () => null;
-  app.config.warnHandler = () => null;
   return {
     app,
   };
