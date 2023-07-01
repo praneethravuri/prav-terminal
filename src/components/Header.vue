@@ -55,7 +55,7 @@ export default {
     width: 10px;
 }
 
-.ascii {
+.ascii-art{
     font-size: 16px;
 }
 </style>

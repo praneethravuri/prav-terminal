@@ -89,23 +89,23 @@ input[type=text] {
         color: $bright-purple;
     }
 
-    &-orange{
+    &-orange {
         color: $orange;
     }
 
-    &-teal{
+    &-teal {
         color: $teal;
     }
 
-    &-electric-green{
+    &-electric-green {
         color: $electric-green;
     }
 
-    &-pink-red{
+    &-pink-red {
         color: $pink-red;
     }
 
-    &-brown{
+    &-brown {
         color: $brown
     }
 }
@@ -121,6 +121,8 @@ input[type=text] {
     margin: 30px 0px;
 }
 
+
+
 // responsive media queries
 
 @media only screen and (max-width: 600px) {
@@ -130,14 +132,14 @@ input[type=text] {
 
     input[type=text] {
         font-size: 0.75rem;
+
     }
 }
 
-
-
 @media screen and (max-width: 800px) {
 
-    .ascii {
+    .ascii,
+    #loading-ascii-art {
         font-size: 8px;
         line-height: 1.25;
 
