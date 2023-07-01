@@ -35,8 +35,8 @@
       </label>
       <input aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
         :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }" ref="inputField" type="text"
-        @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow"
-        @keydown.tab="autoComplete" autofocus v-model="inputValue" />
+        @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
+        v-model="inputValue" />
     </div>
   </div>
 </template>
@@ -110,15 +110,21 @@ export default {
       }
     },
     autoComplete() {
-      const input = this.inputValue.toLowerCase().trim();
-      const command = this.correctCommands.find(cmd => cmd.startsWith(input));
-      if (command) {
-        this.inputValue = command;
-      }
+
     }
   },
   mounted() {
     this.setFocusOnInput();
+    document.getElementById("command-input").addEventListener("keydown", (event) => {
+      if (event.key === "Tab") {
+        const input = this.inputValue.toLowerCase().trim();
+        const command = this.correctCommands.find(cmd => cmd.startsWith(input));
+        if (command) {
+          this.inputValue = command;
+        }
+        event.preventDefault();
+      }
+    });
   },
 };
 </script>
