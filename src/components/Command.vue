@@ -35,8 +35,8 @@
       </label>
       <input aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
         :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }" ref="inputField" type="text"
-        @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
-        v-model="inputValue" />
+        @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow"
+        @keydown.tab="autoComplete" autofocus v-model="inputValue" />
     </div>
   </div>
 </template>
@@ -85,7 +85,7 @@ export default {
         this.previousCommands.push(command); // Store the command
         this.currentIndex = this.previousCommands.length; // Update the currentIndex
       }
-      
+
       this.inputValue = '';
       this.$nextTick(() => {
         this.setFocusOnInput();
@@ -109,6 +109,13 @@ export default {
         this.inputValue = '';
       }
     },
+    autoComplete() {
+      const input = this.inputValue.toLowerCase().trim();
+      const command = this.correctCommands.find(cmd => cmd.startsWith(input));
+      if (command) {
+        this.inputValue = command;
+      }
+    }
   },
   mounted() {
     this.setFocusOnInput();
