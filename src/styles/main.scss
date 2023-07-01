@@ -1,4 +1,4 @@
-@import "./variables";
+@import "./_variables";
 
 // body, *, root, html
 * {
@@ -107,6 +107,20 @@ input[type=text] {
 
     &-brown {
         color: $brown
+    }
+}
+
+// projects.vue
+
+.projects {
+
+    & div div {
+        margin: 0;
+    }
+
+    & .sub-project {
+        border-bottom: 2px dashed $bright-purple;
+        padding-bottom: 10px;
     }
 }
 

@@ -100,15 +100,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.projects {
-
-    & div div {
-        margin: 0;
-    }
-
-    & .sub-project {
-        border-bottom: 2px dashed white;
-        padding-bottom: 10px;
-    }
-}
 </style>
