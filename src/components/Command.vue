@@ -80,7 +80,7 @@ export default {
       if (this.inputValue === "clear") {
         this.storeCommand = []; // Clear the storeCommand array
       } else {
-        const command = this.inputValue.toLowerCase(); // Convert input to lowercase
+        const command = this.inputValue.toLowerCase().trim(); // Convert input to lowercase
         this.storeCommand.push(command);
         this.previousCommands.push(command); // Store the command
         this.currentIndex = this.previousCommands.length; // Update the currentIndex
