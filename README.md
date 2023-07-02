@@ -51,7 +51,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Lime Green     | ![#32CD32](https://via.placeholder.com/10/32CD32?text=+) `#32CD32` |
+| Lime Green     | ![#39FF14](https://via.placeholder.com/10/39FF14?text=+) `#39FF14` |
 | White          | ![#F7F7F7](https://via.placeholder.com/10/F7F7F7?text=+) `#F7F7F7` |
 | Bright Blue    | ![#00a6f4](https://via.placeholder.com/10/00a6f4?text=+) `#00a6f4` |
 | Bright Purple  | ![#BF40BF](https://via.placeholder.com/10/BF40BF?text=+) `#BF40BF` |
