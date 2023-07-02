@@ -50,7 +50,7 @@
       </label>
       <form @submit.prevent>
         <span class="predicted-command">{{ predictedCommand }}</span>
-        <input aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
+        <input autocomplete="off" aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
           :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }" ref="inputField" type="text"
           @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
           v-model="inputValue" />
