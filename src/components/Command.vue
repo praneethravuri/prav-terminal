@@ -30,6 +30,12 @@
         <div v-else-if="command === 'skills'">
           <Skills />
         </div>
+        <div v-else-if="command === 'repo'">
+          <p>Opening the github repository...</p>
+        </div>
+        <div v-else-if="command === 'date'">
+          <p>{{ formattedDateTime }}</p>
+        </div>
 
         <div v-else>
           <p><span class="color-pink-red">Invalid command : '{{ command }}'</span>. Try <span
@@ -79,9 +85,10 @@ export default {
       inputValue: '',
       currentTab: '',
       storeCommand: [],
-      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke", "education", "skills"],
+      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke", "education", "skills", "date", "repo", "date"],
       currentIndex: -1,
       previousCommands: [],
+      formattedDateTime: '',
     };
   },
   computed: {
@@ -91,21 +98,35 @@ export default {
     },
   },
   methods: {
+    addToCommandHistory(command) {
+      this.storeCommand.push(command);
+      this.previousCommands.push(command);
+      this.currentIndex = this.previousCommands.length;
+    },
     displayCommandOutput() {
       if (this.inputValue === "clear") {
         this.storeCommand = []; // Clear the storeCommand array
       } else if (this.inputValue.toLowerCase().trim() === "repo") {
-        window.open("https://github.com/praneethravuri/prav-terminal", "_blank"); // Open new window with google.com
+        const command = this.inputValue.toLowerCase().trim();
+        this.addToCommandHistory(command);
+        window.open("https://github.com/praneethravuri/prav-terminal", "_blank");
+      } else if (this.inputValue.toLowerCase().trim() === "date") {
+        const command = this.inputValue.toLowerCase().trim();
+        this.addToCommandHistory(command);
+        const date = new Date();
+        this.formattedDateTime = this.formatDateTime(date);
       } else {
-        const command = this.inputValue.toLowerCase().trim(); // Convert input to lowercase
-        this.storeCommand.push(command);
-        this.previousCommands.push(command); // Store the command
-        this.currentIndex = this.previousCommands.length; // Update the currentIndex
+        const command = this.inputValue.toLowerCase().trim();
+        this.addToCommandHistory(command);
       }
 
       this.inputValue = '';
       this.$nextTick(() => {
         this.setFocusOnInput();
+        const inputField = this.$refs.inputField;
+        const inputLength = inputField.value.length;
+        inputField.selectionStart = inputLength;
+        inputField.selectionEnd = inputLength;
       });
     },
     setFocusOnInput() {
@@ -125,6 +146,22 @@ export default {
         this.currentIndex = this.previousCommands.length;
         this.inputValue = '';
       }
+    },
+    formatDateTime(date) {
+      const year = date.getFullYear();
+      const month = date.getMonth();
+      const day = date.getDate();
+      const hours = date.getHours();
+      const minutes = date.getMinutes();
+      const seconds = date.getSeconds();
+
+      const formattedMonth = String(month + 1).padStart(2, '0');
+      const formattedDay = String(day).padStart(2, '0');
+      const formattedHours = String(hours).padStart(2, '0');
+      const formattedMinutes = String(minutes).padStart(2, '0');
+      const formattedSeconds = String(seconds).padStart(2, '0');
+
+      return `${formattedMonth}/${formattedDay}/${year} ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
     },
   },
   mounted() {

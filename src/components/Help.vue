@@ -23,7 +23,8 @@ export default {
           { commandName: "contact", commandDescription: "Shares my contact information" },
           { commandName: "education", commandDescription: "Shows where I have studied" },
           { commandName: "joke", commandDescription: "Generates a random programming joke" },
-          { commandName: "repo", commandDescription: "Open this project's github repository" }
+          { commandName: "repo", commandDescription: "Open this project's github repository" },
+          { commandName: "date", commandDescription: "Show current date and time" }
       ]
     };
   }
