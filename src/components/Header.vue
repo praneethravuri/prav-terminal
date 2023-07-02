@@ -21,7 +21,6 @@
         <p> - Type <span class="color-orange">clear</span> to clear the terminal</p>
         <p> - Use <span class="color-orange">up</span> and <span class="color-orange">down</span> arrow keys to select
             previous commands</p>
-        <p> - Click on <span class="color-orange">prompt</span> to refresh the page</p>
         <p> - Commands can be typed even if the input is out of focus</p>
         <p> - Press on <span class="color-orange">tab</span> key to auto complete the command</p>
     </div>
