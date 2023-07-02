@@ -1,5 +1,5 @@
 <template>
-  <div class="terminal-output">
+  <div class="terminal-output" ref="terminalOutput">
     <div class="show-previous-commands" id="prev-commands">
       <div v-for="(command, i) in storeCommand" :key="i">
         <span>
@@ -44,18 +44,17 @@
       </div>
     </div>
 
-    <div class="input-prompt">
+    <div class="input-prompt m-30">
       <label for="prompt">
         <Prompt />
       </label>
       <form @submit.prevent>
         <span class="predicted-command">{{ predictedCommand }}</span>
-        <input autocomplete="off" aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
-          :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }" ref="inputField" type="text"
-          @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
-          v-model="inputValue" />
+        <input autocomplete="off" aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt"
+          id="command-input" :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }"
+          ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
+          @keyup.down="handleDownArrow" autofocus v-model="inputValue" />
       </form>
-
     </div>
   </div>
 </template>
@@ -133,71 +132,73 @@ export default {
         const inputLength = inputField.value.length;
         inputField.selectionStart = inputLength;
         inputField.selectionEnd = inputLength;
-      });
-    },
-    setFocusOnInput() {
-      this.$refs.inputField.focus();
-    },
-    handleUpArrow() {
-      this.predictedCommand = '';
-      if (this.currentIndex > 0) {
-        this.currentIndex--;
-        this.inputValue = this.previousCommands[this.currentIndex];
-      }
-    },
-    handleDownArrow() {
-      this.predictedCommand = '';
-      if (this.currentIndex < this.previousCommands.length - 1) {
-        this.currentIndex++;
-        this.inputValue = this.previousCommands[this.currentIndex];
-      } else {
-        this.currentIndex = this.previousCommands.length;
-        this.inputValue = '';
-      }
-    },
-    formatDateTime(date) {
-      const year = date.getFullYear();
-      const month = date.getMonth();
-      const day = date.getDate();
-      const hours = date.getHours();
-      const minutes = date.getMinutes();
-      const seconds = date.getSeconds();
-
-      const formattedMonth = String(month + 1).padStart(2, '0');
-      const formattedDay = String(day).padStart(2, '0');
-      const formattedHours = String(hours).padStart(2, '0');
-      const formattedMinutes = String(minutes).padStart(2, '0');
-      const formattedSeconds = String(seconds).padStart(2, '0');
-
-      return `${formattedMonth}/${formattedDay}/${year} ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
-    },
-  },
-  mounted() {
-    this.setFocusOnInput();
-    const inputField = this.$refs.inputField;
-
-    inputField.addEventListener("keydown", (event) => {
-      const input = this.inputValue.toLowerCase().trim();
-      const command = this.correctCommands.find(cmd => cmd.startsWith(input));
-
-      if (event.key === "Tab" && command) {
-        this.inputValue = command;
-        event.preventDefault();
-      } else {
-        if (command && input) {
-          this.predictedCommand = command;
-        } else {
-          this.predictedCommand = '';
-        }
-      }
+        const terminalOutput = this.$refs.terminalOutput;
+        terminalOutput.scrollIntoView(false);
     });
+  },
+  setFocusOnInput() {
+    this.$refs.inputField.focus();
+  },
+  handleUpArrow() {
+    this.predictedCommand = '';
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.inputValue = this.previousCommands[this.currentIndex];
+    }
+  },
+  handleDownArrow() {
+    this.predictedCommand = '';
+    if (this.currentIndex < this.previousCommands.length - 1) {
+      this.currentIndex++;
+      this.inputValue = this.previousCommands[this.currentIndex];
+    } else {
+      this.currentIndex = this.previousCommands.length;
+      this.inputValue = '';
+    }
+  },
+  formatDateTime(date) {
+    const year = date.getFullYear();
+    const month = date.getMonth();
+    const day = date.getDate();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
 
-    inputField.addEventListener("keyup", (event) => {
-      if (event.key === "Backspace" && !this.inputValue) {
+    const formattedMonth = String(month + 1).padStart(2, '0');
+    const formattedDay = String(day).padStart(2, '0');
+    const formattedHours = String(hours).padStart(2, '0');
+    const formattedMinutes = String(minutes).padStart(2, '0');
+    const formattedSeconds = String(seconds).padStart(2, '0');
+
+    return `${formattedMonth}/${formattedDay}/${year} ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+  },
+},
+mounted() {
+  this.setFocusOnInput();
+  const inputField = this.$refs.inputField;
+
+  inputField.addEventListener("keydown", (event) => {
+    const input = this.inputValue.toLowerCase().trim();
+    const command = this.correctCommands.find(cmd => cmd.startsWith(input));
+
+    if (event.key === "Tab" && command) {
+      this.inputValue = command;
+      event.preventDefault();
+    } else {
+      if (command && input) {
+        this.predictedCommand = command;
+      } else {
         this.predictedCommand = '';
       }
-    });
-  },
+    }
+  });
+
+  inputField.addEventListener("keyup", (event) => {
+    if (event.key === "Backspace" && !this.inputValue) {
+      this.predictedCommand = '';
+    }
+  });
+},
 
 };
 </script>
