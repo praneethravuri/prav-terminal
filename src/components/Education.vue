@@ -1,21 +1,22 @@
 <template>
-    <div>
-        <div class="edu-1 m-30">
-            <p class="color-green">George Mason University</p>
-            <p>Master of Science - MS, Computer Science | 2022 ~ 2024</p>
-        </div>
-        <div class="edu-2 m-30">
-            <p class="color-green">Gokaraju Rangaraju Institute of Engineering and Technology</p>
-            <p>Bachelor of Technology - BTech, Computer Science | 2018 ~ 2022</p>
-        </div>
+    <div class="m-30" v-for="edu in eduction" :key="edu.institution">
+        <p class="color-pink-red">{{ edu.institution }}</p>
+        <p>{{ edu.degree }} | {{ edu.dateRange }}</p>
     </div>
 </template>
 
 <script>
-export default{
-    name : "Education"
+export default {
+    name: "Education",
+    data() {
+        return {
+            eduction: [
+                { institution: "George Mason University", degree: "Master of Science - MS, Computer Science", dateRange: "2022 ~ 2024" },
+                { institution: "Gokaraju Rangaraju Institute of Engineering and Technology", degree: "Bachelor of Technology - BTech, Computer Science", dateRange: "2018 ~ 2022" }
+            ]
+        }
+    }
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

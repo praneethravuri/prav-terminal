@@ -47,6 +47,7 @@ export default {
 <style scoped lang="scss">
 .work{
     padding-bottom: 10px;
+    margin-bottom: 30px;
     border-bottom: 2px dashed white;
 }
 </style>

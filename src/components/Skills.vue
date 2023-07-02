@@ -14,7 +14,7 @@ export default {
                 { skillType: "Core", skillsList: ["Python", "Javascript", "HTML", "CSS", "C"] },
                 { skillType: "Frameworks", skillsList: ["Node.js", "Express.js", "Vue.js", "jQuery", "Scss", "Bootstrap", "Flask"] },
                 { skillType: "Databases", skillsList: ["MongoDB", "MySQL"] },
-                { skillType: "Tools", skillsList: ["Git", "Github", "VS Code", "Pycharm"] },
+                { skillType: "Tools", skillsList: ["Git", "Github", "VS Code", "Pycharm", "Jupyter"] },
                 { skillType: "Miscellaneous", skillsList: ["Zorba", "JSONiq"] },
             ]
         }
