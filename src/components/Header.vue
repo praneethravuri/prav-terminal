@@ -3,7 +3,7 @@
         <p>
             <Prompt /> (c) PRAV. All rights reserved 2023.
         </p>
-        <p>
+        <p class="m-30">
             <span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> /
             <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/" target="_blank">LinkedIn</a></span> /
             <span><a href="mailto:prav2500@gmail.com">Email</a></span> /
@@ -12,7 +12,8 @@
         </p>
     </div>
 
-    <div class="ascii m-30">
+    <div class="ascii">
+        <p class="intro-text">A retro and terminal-themed portfolio website created by...</p>
         <pre id="ascii-art" class="color-orange">{{ name }}</pre>
     </div>
 
@@ -59,6 +60,7 @@ export default {
 .ascii-art {
     font-size: 16px;
     line-height: 1.25;
+    margin: 30px 0px;
 }
 
 @media screen and (max-width: 800px) {
