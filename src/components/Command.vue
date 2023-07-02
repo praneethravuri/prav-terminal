@@ -3,7 +3,7 @@
     <div class="show-previous-commands" id="prev-commands">
       <div v-for="(command, i) in storeCommand" :key="i">
         <span>
-          <Prompt /><span class="color-yellow ">{{ command }}</span>
+          <Prompt /><span class="color-orange ">{{ command }}</span>
         </span>
 
         <div v-if="command === 'help'">

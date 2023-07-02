@@ -1,6 +1,5 @@
 @import "./_variables";
 
-// body, *, root, html
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,10 +8,14 @@
 
 body {
     background-color: $black;
-    font-family: $source-code-pro-font;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5rem;
+
+    font: {
+        family: $source-code-pro-font;
+        weight: 600;
+        size: 16px;
+        line-height: 1.5rem;
+    }
+
     color: $white;
     text-decoration: none;
 }
@@ -21,21 +24,32 @@ body {
     scroll-behavior: slow;
 }
 
-
 html,
 body {
     scrollbar-width: thin;
     scrollbar-color: $orange $black;
 }
 
-// tags
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: $black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $orange;
+}
+
+::-webkit-scrollbar-corner {
+    background: $black;
+}
 
 a {
     text-decoration: none;
-    color: $turquoise-blue;
+    color: $bright-blue;
     transition: all 0.3s ease;
 
-    &:hover{
+    &:hover {
         color: $yellow;
     }
 }
@@ -44,13 +58,15 @@ span {
     color: $off-white;
 }
 
-input[type=text] {
+input[type="text"] {
     background-color: $black;
     border: none;
-    font-family: $source-code-pro-font;
-    font-weight: 400;
-    font-size: 16px;
-    font-weight: 600;
+
+    font: {
+        family: $source-code-pro-font;
+        weight: 600;
+        size: 16px;
+    }
 
     &:focus {
         outline: none;
@@ -72,7 +88,6 @@ input[type=text] {
     }
 }
 
-// text colors
 .color {
     &-lime-green {
         color: $lime-green;
@@ -83,7 +98,7 @@ input[type=text] {
     }
 
     &-yellow {
-        color: yellow;
+        color: $yellow;
     }
 
     &-white {
@@ -111,26 +126,23 @@ input[type=text] {
     }
 
     &-brown {
-        color: $brown
+        color: $brown;
     }
 
-    &-pink{
+    &-pink {
         color: $pink;
     }
 
-    &-turq-blue{
+    &-turq-blue {
         color: $turquoise-blue;
     }
 
-    &-bright-blue{
+    &-bright-blue {
         color: $bright-blue;
     }
 }
 
-// projects.vue
-
 .projects {
-
     & div div {
         margin: 0;
     }
@@ -141,51 +153,32 @@ input[type=text] {
     }
 }
 
-// prompt and prompt colors
-
 .prompt-text {
     margin: 10px 0px;
 }
 
-// command prompt
 .m-30 {
     margin: 30px 0px;
 }
 
-// responsive media queries
-
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 0.75rem;
-    }
 
-    input[type=text] {
+    body,
+    input[type="text"] {
         font-size: 0.75rem;
-
     }
 }
-
 
 .ascii,
 .ascii-art {
     font-size: 16px;
     line-height: 1.25;
-}
 
-@media screen and (max-width: 800px) {
-
-    .ascii, .ascii-art {
+    @media screen and (max-width: 800px) {
         font-size: 8px;
-        line-height: 1.25;
-
     }
-}
 
-@media screen and (max-width: 600px) {
-
-    .ascii,
-    .ascii-art {
+    @media screen and (max-width: 600px) {
         font-size: 5px;
-
     }
 }
