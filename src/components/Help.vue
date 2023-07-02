@@ -1,5 +1,6 @@
 <template>
   <p>Welcome! Here are all the available commands: </p>
+  <br>
   <div class="help-options">
     <p v-for="command in commandList" :key="command.commandName">
       <span class="color-orange">{{ command.commandName }}</span>
@@ -18,6 +19,7 @@ export default {
           { commandName: "about", commandDescription: "Provides information about me" },
           { commandName: "experience", commandDescription: "Shows my work experience" },
           { commandName: "projects", commandDescription: "Lists all the projects I have worked on" },
+          { commandName: "skills", commandDescription: "List of all technologies I have worked with" },
           { commandName: "contact", commandDescription: "Shares my contact information" },
           { commandName: "education", commandDescription: "Shows where I have studied" },
           { commandName: "joke", commandDescription: "Generates a random programming joke" },
