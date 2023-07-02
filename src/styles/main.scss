@@ -59,7 +59,7 @@ span {
 }
 
 input[type="text"] {
-    background-color: $black;
+    background-color: transparent;
     border: none;
 
     font: {
@@ -72,6 +72,8 @@ input[type="text"] {
         outline: none;
     }
 }
+
+
 
 .main {
     margin: 15px auto;

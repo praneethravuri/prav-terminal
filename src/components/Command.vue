@@ -48,10 +48,14 @@
       <label for="prompt">
         <Prompt />
       </label>
-      <input aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
-        :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }" ref="inputField" type="text"
-        @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
-        v-model="inputValue" />
+      <form @submit.prevent>
+        <span class="predicted-command">{{ predictedCommand }}</span>
+        <input aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt" id="command-input"
+          :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }" ref="inputField" type="text"
+          @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow" @keyup.down="handleDownArrow" autofocus
+          v-model="inputValue" />
+      </form>
+
     </div>
   </div>
 </template>
@@ -89,6 +93,7 @@ export default {
       currentIndex: -1,
       previousCommands: [],
       formattedDateTime: '',
+      predictedCommand: '',
     };
   },
   computed: {
@@ -121,6 +126,7 @@ export default {
       }
 
       this.inputValue = '';
+      this.predictedCommand = '';
       this.$nextTick(() => {
         this.setFocusOnInput();
         const inputField = this.$refs.inputField;
@@ -133,12 +139,14 @@ export default {
       this.$refs.inputField.focus();
     },
     handleUpArrow() {
+      this.predictedCommand = '';
       if (this.currentIndex > 0) {
         this.currentIndex--;
         this.inputValue = this.previousCommands[this.currentIndex];
       }
     },
     handleDownArrow() {
+      this.predictedCommand = '';
       if (this.currentIndex < this.previousCommands.length - 1) {
         this.currentIndex++;
         this.inputValue = this.previousCommands[this.currentIndex];
@@ -166,17 +174,31 @@ export default {
   },
   mounted() {
     this.setFocusOnInput();
-    document.getElementById("command-input").addEventListener("keydown", (event) => {
-      if (event.key === "Tab") {
-        const input = this.inputValue.toLowerCase().trim();
-        const command = this.correctCommands.find(cmd => cmd.startsWith(input));
-        if (command) {
-          this.inputValue = command;
-        }
+    const inputField = this.$refs.inputField;
+
+    inputField.addEventListener("keydown", (event) => {
+      const input = this.inputValue.toLowerCase().trim();
+      const command = this.correctCommands.find(cmd => cmd.startsWith(input));
+
+      if (event.key === "Tab" && command) {
+        this.inputValue = command;
         event.preventDefault();
+      } else {
+        if (command && input) {
+          this.predictedCommand = command;
+        } else {
+          this.predictedCommand = '';
+        }
+      }
+    });
+
+    inputField.addEventListener("keyup", (event) => {
+      if (event.key === "Backspace" && !this.inputValue) {
+        this.predictedCommand = '';
       }
     });
   },
+
 };
 </script>
 
@@ -186,13 +208,27 @@ span {
   margin: 30px 0px;
 }
 
-@media only screen and (max-width: 600px) {
-  .input-prompt {
-    display: flex;
+.input-prompt {
+  display: flex;
 
-    & input[type=text] {
-      margin-left: 5px;
-    }
+
+  & input[type=text] {
+    margin-left: 5px;
   }
+}
+
+form {
+  flex-grow: 1;
+  position: relative;
+}
+
+.predicted-command {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: pre;
+  margin: 0px 0px 0px 5px;
+  color: rgb(69, 69, 69);
+  z-index: -1;
 }
 </style>
