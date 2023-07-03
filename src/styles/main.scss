@@ -54,6 +54,43 @@ span {
   color: $off-white;
 }
 
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+
+    font: {
+        family: $source-code-pro-font;
+        weight: 600;
+        size: 16px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.intro-text{
+    font-style: italic;
+    font-weight: bold;
+    color: $pink-red;
+}
+
+
+.main {
+    margin: 15px auto;
+    width: 99%;
+    height: 95vh;
+    border: 3px solid $orange;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &-content {
+        overflow-y: auto;
+        height: 100%;
+        margin: 10px;
+    }
+}
+
 .color {
   &-lime-green {
     color: $lime-green;
