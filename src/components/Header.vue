@@ -63,14 +63,6 @@ export default {
     font-size: 16px;
     line-height: 1.25;
     margin: 30px 0px;
-
-    @media screen and (max-width: 800px) {
-        font-size: 8px;
-    }
-
-    @media screen and (max-width: 600px) {
-        font-size: 5px;
-    }
 }
 </style>
   
