@@ -37,4 +37,20 @@ export default {
 
 <style scoped lang="scss">
 @import "./styles/main.scss";
+@import "./styles/_variables.scss";
+
+.main {
+  margin: 15px auto;
+  width: 99%;
+  height: 95vh;
+  border: 3px solid $orange;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &-content {
+    overflow-y: auto;
+    height: 100%;
+    margin: 10px;
+  }
+}
 </style>

@@ -15,16 +15,16 @@ export default {
   data() {
     return {
       commandList: [
-          { commandName: "help", commandDescription: "Displays a list of all available commands" },
-          { commandName: "about", commandDescription: "Provides information about me" },
-          { commandName: "experience", commandDescription: "Shows my work experience" },
-          { commandName: "projects", commandDescription: "Lists all the projects I have worked on" },
-          { commandName: "skills", commandDescription: "List of all technologies I have worked with" },
-          { commandName: "contact", commandDescription: "Shares my contact information" },
-          { commandName: "education", commandDescription: "Shows where I have studied" },
-          { commandName: "joke", commandDescription: "Generates a random programming joke" },
-          { commandName: "repo", commandDescription: "Open this project's github repository" },
-          { commandName: "date", commandDescription: "Show current date and time" }
+        { commandName: "help", commandDescription: "Displays a list of all available commands" },
+        { commandName: "about", commandDescription: "Provides information about me" },
+        { commandName: "experience", commandDescription: "Shows my work experience" },
+        { commandName: "projects", commandDescription: "Lists all the projects I have worked on" },
+        { commandName: "skills", commandDescription: "List of all technologies I have worked with" },
+        { commandName: "contact", commandDescription: "Shares my contact information" },
+        { commandName: "education", commandDescription: "Shows where I have studied" },
+        { commandName: "joke", commandDescription: "Generates a random programming joke" },
+        { commandName: "repo", commandDescription: "Open this project's github repository" },
+        { commandName: "date", commandDescription: "Show current date and time" }
       ]
     };
   }

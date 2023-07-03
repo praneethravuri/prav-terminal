@@ -45,9 +45,10 @@ export default {
 
 
 <style scoped lang="scss">
+@import "../styles/_variables.scss";
 .work{
     padding-bottom: 10px;
     margin-bottom: 30px;
-    border-bottom: 2px dashed white;
+    border-bottom: 2px dashed $bright-purple;
 }
 </style>

@@ -1,191 +1,133 @@
 @import "./_variables";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: $black;
-
-    font: {
-        family: $source-code-pro-font;
-        weight: 600;
-        size: 16px;
-        line-height: 1.5rem;
-    }
-
-    color: $white;
-    text-decoration: none;
+  background-color: $black;
+  font-family: $source-code-pro-font;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: $white;
+  text-decoration: none;
 }
 
 :root {
-    scroll-behavior: slow;
+  scroll-behavior: slow;
 }
 
 html,
 body {
-    scrollbar-width: thin;
-    scrollbar-color: $orange $black;
+  scrollbar-width: thin;
+  scrollbar-color: $orange $black;
 }
 
 ::-webkit-scrollbar {
-    height: 12px;
-    width: 12px;
-    background: $black;
+  height: 12px;
+  width: 12px;
+  background: $black;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $orange;
+  background: $orange;
 }
 
 ::-webkit-scrollbar-corner {
-    background: $black;
+  background: $black;
 }
 
 a {
-    text-decoration: none;
-    color: $bright-blue;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: $bright-blue;
+  transition: all 0.3s ease;
 
-    &:hover {
-        color: $yellow;
-    }
+  &:hover {
+    color: $yellow;
+  }
 }
 
 span {
-    color: $off-white;
-}
-
-input[type="text"] {
-    background-color: transparent;
-    border: none;
-
-    font: {
-        family: $source-code-pro-font;
-        weight: 600;
-        size: 16px;
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.intro-text{
-    font-style: italic;
-    font-weight: bold;
-    color: $pink-red;
-}
-
-
-.main {
-    margin: 15px auto;
-    width: 99%;
-    height: 95vh;
-    border: 3px solid $orange;
-    border-radius: 8px;
-    overflow: hidden;
-
-    &-content {
-        overflow-y: auto;
-        height: 100%;
-        margin: 10px;
-    }
+  color: $off-white;
 }
 
 .color {
-    &-lime-green {
-        color: $lime-green;
-    }
+  &-lime-green {
+    color: $lime-green;
+  }
 
-    &-red {
-        color: red;
-    }
+  &-red {
+    color: red;
+  }
 
-    &-yellow {
-        color: $yellow;
-    }
+  &-yellow {
+    color: $yellow;
+  }
 
-    &-white {
-        color: $white;
-    }
+  &-white {
+    color: $white;
+  }
 
-    &-purple {
-        color: $bright-purple;
-    }
+  &-purple {
+    color: $bright-purple;
+  }
 
-    &-orange {
-        color: $orange;
-    }
+  &-orange {
+    color: $orange;
+  }
 
-    &-teal {
-        color: $teal;
-    }
+  &-teal {
+    color: $teal;
+  }
 
-    &-electric-green {
-        color: $electric-green;
-    }
+  &-electric-green {
+    color: $electric-green;
+  }
 
-    &-pink-red {
-        color: $pink-red;
-    }
+  &-pink-red {
+    color: $pink-red;
+  }
 
-    &-brown {
-        color: $brown;
-    }
+  &-brown {
+    color: $brown;
+  }
 
-    &-pink {
-        color: $pink;
-    }
+  &-pink {
+    color: $pink;
+  }
 
-    &-turq-blue {
-        color: $turquoise-blue;
-    }
+  &-turq-blue {
+    color: $turquoise-blue;
+  }
 
-    &-bright-blue {
-        color: $bright-blue;
-    }
-}
+  &-bright-blue {
+    color: $bright-blue;
+  }
 
-.projects {
-    & div div {
-        margin: 0;
-    }
-
-    & .sub-project {
-        border-bottom: 2px dashed $bright-purple;
-        padding-bottom: 10px;
-    }
-}
-
-.prompt-text {
-    margin: 10px 0px;
+  &-off-white {
+    color: $off-white;
+  }
 }
 
 .m-30 {
-    margin: 30px 0px;
+  margin: 30px 0;
 }
 
 @media only screen and (max-width: 800px) {
-
-    body,
-    input[type="text"], .intro-text {
-        font-size: 1rem;
-    }
+  body,
+  input[type="text"],
+  .intro-text {
+    font-size: 13.5px;
+  }
 }
 
-.ascii,
-.ascii-art {
-    font-size: 16px;
-    line-height: 1.25;
-
-    @media screen and (max-width: 800px) {
-        font-size: 8px;
-    }
-
-    @media screen and (max-width: 600px) {
-        font-size: 5px;
-    }
+@media only screen and (max-width: 320px) {
+  body,
+  input[type="text"],
+  .intro-text {
+    font-size: 13px;
+  }
 }

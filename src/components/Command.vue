@@ -134,84 +134,96 @@ export default {
         inputField.selectionEnd = inputLength;
         const terminalOutput = this.$refs.terminalOutput;
         terminalOutput.scrollIntoView(false);
-    });
-  },
-  setFocusOnInput() {
-    this.$refs.inputField.focus();
-  },
-  handleUpArrow() {
-    this.predictedCommand = '';
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-      this.inputValue = this.previousCommands[this.currentIndex];
-    }
-  },
-  handleDownArrow() {
-    this.predictedCommand = '';
-    if (this.currentIndex < this.previousCommands.length - 1) {
-      this.currentIndex++;
-      this.inputValue = this.previousCommands[this.currentIndex];
-    } else {
-      this.currentIndex = this.previousCommands.length;
-      this.inputValue = '';
-    }
-  },
-  formatDateTime(date) {
-    const year = date.getFullYear();
-    const month = date.getMonth();
-    const day = date.getDate();
-    const hours = date.getHours();
-    const minutes = date.getMinutes();
-    const seconds = date.getSeconds();
-
-    const formattedMonth = String(month + 1).padStart(2, '0');
-    const formattedDay = String(day).padStart(2, '0');
-    const formattedHours = String(hours).padStart(2, '0');
-    const formattedMinutes = String(minutes).padStart(2, '0');
-    const formattedSeconds = String(seconds).padStart(2, '0');
-
-    return `${formattedMonth}/${formattedDay}/${year} ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
-  },
-},
-mounted() {
-  this.setFocusOnInput();
-  const inputField = this.$refs.inputField;
-
-  inputField.addEventListener("keydown", (event) => {
-    const input = this.inputValue.toLowerCase().trim();
-    const command = this.correctCommands.find(cmd => cmd.startsWith(input));
-
-    if (event.key === "Tab" && command) {
-      this.inputValue = command;
-      event.preventDefault();
-    } else {
-      if (command && input) {
-        this.predictedCommand = command;
+      });
+    },
+    setFocusOnInput() {
+      this.$refs.inputField.focus();
+    },
+    handleUpArrow() {
+      this.predictedCommand = '';
+      if (this.currentIndex > 0) {
+        this.currentIndex--;
+        this.inputValue = this.previousCommands[this.currentIndex];
+      }
+    },
+    handleDownArrow() {
+      this.predictedCommand = '';
+      if (this.currentIndex < this.previousCommands.length - 1) {
+        this.currentIndex++;
+        this.inputValue = this.previousCommands[this.currentIndex];
       } else {
+        this.currentIndex = this.previousCommands.length;
+        this.inputValue = '';
+      }
+    },
+    formatDateTime(date) {
+      const year = date.getFullYear();
+      const month = date.getMonth();
+      const day = date.getDate();
+      const hours = date.getHours();
+      const minutes = date.getMinutes();
+      const seconds = date.getSeconds();
+
+      const formattedMonth = String(month + 1).padStart(2, '0');
+      const formattedDay = String(day).padStart(2, '0');
+      const formattedHours = String(hours).padStart(2, '0');
+      const formattedMinutes = String(minutes).padStart(2, '0');
+      const formattedSeconds = String(seconds).padStart(2, '0');
+
+      return `${formattedMonth}/${formattedDay}/${year} ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+    },
+  },
+  mounted() {
+    this.setFocusOnInput();
+    const inputField = this.$refs.inputField;
+
+    inputField.addEventListener("keydown", (event) => {
+      const input = this.inputValue.toLowerCase().trim();
+      const command = this.correctCommands.find(cmd => cmd.startsWith(input));
+
+      if (event.key === "Tab" && command) {
+        this.inputValue = command;
+        event.preventDefault();
+      } else {
+        if (command && input) {
+          this.predictedCommand = command;
+        } else {
+          this.predictedCommand = '';
+        }
+      }
+    });
+
+    inputField.addEventListener("keyup", (event) => {
+      if (event.key === "Backspace" && !this.inputValue) {
         this.predictedCommand = '';
       }
-    }
-  });
-
-  inputField.addEventListener("keyup", (event) => {
-    if (event.key === "Backspace" && !this.inputValue) {
-      this.predictedCommand = '';
-    }
-  });
-},
+    });
+  },
 
 };
 </script>
-
 <style lang="scss" scoped>
+@import "../styles/_variables.scss";
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  font-family: $source-code-pro-font;
+  font-weight: 600;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 .show-previous-commands div,
 span {
-  margin: 30px 0px;
+  margin: 30px 0;
 }
 
 .input-prompt {
   display: flex;
-
 
   & input[type=text] {
     margin-left: 5px;
@@ -229,8 +241,8 @@ form {
   left: 0;
   top: 0;
   white-space: pre;
-  margin: 0px 0px 0px 5px;
-  color: rgb(69, 69, 69);
+  margin: 0 0 0 5px;
+  color: $grey;
   z-index: -1;
 }
 </style>

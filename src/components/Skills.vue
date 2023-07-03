@@ -1,6 +1,6 @@
 <template>
     <div v-for="skill in skills" :key="skill.skillType">
-        <p><span class="color-pink-red">{{ skill.skillType }}:</span> <span>{{ skill.skillsList.join(", ") }}</span></p>
+        <p><span class="color-turq-blue">{{ skill.skillType }}:</span> <span>{{ skill.skillsList.join(", ") }}</span></p>
         <br>
     </div>
 </template>

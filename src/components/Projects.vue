@@ -100,4 +100,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../styles/_variables.scss";
+
+.projects {
+    & div div {
+        margin: 0;
+    }
+
+    & .sub-project {
+        border-bottom: 2px dashed $bright-purple;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+}
 </style>
