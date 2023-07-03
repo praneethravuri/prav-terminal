@@ -215,6 +215,7 @@ span {
 
   & input[type=text] {
     margin-left: 5px;
+    text-transform: lowercase;
   }
 }
 
