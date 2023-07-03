@@ -49,7 +49,7 @@ export default {
 .work{
     padding-bottom: 10px;
     margin-bottom: 30px;
-    border-bottom: 2px dashed white;
+    border-bottom: 2px dashed $grey;
 }
 
 .main-content-heading{

@@ -1,12 +1,19 @@
+@font-face {
+    font-family: 'CascadiaCode';
+    src: url(./source-code-pro.ttf);
+    display: swap;
+  }
+
 $source-code-pro-font : 'Source Code Pro', monospace;
 $background : #171717;
 $predicted-text-color : #7a7a7a;
+$grey : #3d3d3d;
 $incorrect-command-color : #F58E8E;
-$correct-command-color : #a9d3ab;
+$correct-command-color : #78c97c;
 $secondary-color : #D4D4D4;
-$prompt-color-1 : #a9d3ab;
-$prompt-color-2 : #fed37e;
-$main-border-color : #fed37e;
-$primary-color: #7aabd4;
-$content-heading-color: #d6add5;
-$green : #a9d3ab;
+$prompt-color-1 : #78c97c;
+$prompt-color-2 : #f8bf4c;
+$main-border-color : #f8bf4c;
+$primary-color: #4393d4;
+$content-heading-color: #d35dd1;
+$green : #78c97c;

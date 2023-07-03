@@ -24,7 +24,8 @@ export default {
         { commandName: "education", commandDescription: "Shows where I have studied" },
         { commandName: "joke", commandDescription: "Generates a random programming joke" },
         { commandName: "repo", commandDescription: "Open this project's github repository" },
-        { commandName: "date", commandDescription: "Show current date and time" }
+        { commandName: "date", commandDescription: "Show current date and time" },
+        { commandName: "music", commandDescription: "Listen to my favorite song" }
       ]
     };
   }

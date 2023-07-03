@@ -33,13 +33,16 @@
         <div v-else-if="command === 'repo'">
           <p>Opening the github repository...</p>
         </div>
+        <div v-else-if="command === 'music'">
+          <p>Get rickrolled!</p>
+        </div>
         <div v-else-if="command === 'date'">
           <p>{{ formattedDateTime }}</p>
         </div>
 
         <div v-else>
-          <p><span class="invalid-command">Invalid command : '{{ command }}'</span>. Try <span
-              >'help'</span> to get started</p>
+          <p><span class="invalid-command">Invalid command : '{{ command }}'</span>. Try <span>'help'</span> to get
+            started</p>
         </div>
       </div>
     </div>
@@ -88,7 +91,7 @@ export default {
       inputValue: '',
       currentTab: '',
       storeCommand: [],
-      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke", "education", "skills", "date", "repo", "date"],
+      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke", "education", "skills", "date", "repo", "date", "music"],
       currentIndex: -1,
       previousCommands: [],
       formattedDateTime: '',
@@ -114,7 +117,13 @@ export default {
         const command = this.inputValue.toLowerCase().trim();
         this.addToCommandHistory(command);
         window.open("https://github.com/praneethravuri/prav-terminal", "_blank");
-      } else if (this.inputValue.toLowerCase().trim() === "date") {
+      }
+      else if (this.inputValue.toLowerCase().trim() === "music") {
+        const command = this.inputValue.toLowerCase().trim();
+        this.addToCommandHistory(command);
+        window.open("https://www.youtube.com/watch?v=a3Z7zEc7AXQ", "_blank");
+      }
+      else if (this.inputValue.toLowerCase().trim() === "date") {
         const command = this.inputValue.toLowerCase().trim();
         this.addToCommandHistory(command);
         const date = new Date();
@@ -246,14 +255,16 @@ form {
   z-index: -1;
 }
 
-.incorrect-command, .invalid-command{
+.incorrect-command,
+.invalid-command {
   color: $incorrect-command-color;
 }
-.correct-command{
+
+.correct-command {
   color: $correct-command-color;
 }
 
-.entered-command{
+.entered-command {
   color: $primary-color;
 }
 </style>

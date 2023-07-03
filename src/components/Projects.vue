@@ -108,7 +108,7 @@ export default {
     }
 
     & .sub-project {
-        border-bottom: 2px dashed white;
+        border-bottom: 2px dashed $grey;
         padding-bottom: 10px;
         margin-bottom: 30px;
     }
