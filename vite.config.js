@@ -12,11 +12,12 @@ export default defineConfig({
         icons : [
           {
             src : "/favicon.ico",
-            sizes : "100x100",
+            sizes : "512x512",
             type : "image/ico",
             purpose : "any maskable"
           }
-        ]
+        ],
+        "theme_color": "#171717",
       },
     })
   ],
