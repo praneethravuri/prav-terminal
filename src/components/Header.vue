@@ -13,16 +13,15 @@
     </div>
 
     <div class="ascii">
-        <p class="intro-text">A retro and terminal-themed portfolio website created by...</p>
-        <pre id="ascii-art" class="color-orange">{{ name }}</pre>
+        <pre id="ascii-art" >{{ name }}</pre>
     </div>
 
     <div class="instructions">
-        <p> - Type <span class="color-orange">help</span> to see a list of available commands</p>
-        <p> - Type <span class="color-orange">clear</span> to clear the terminal</p>
-        <p> - Use <span class="color-orange">up</span> and <span class="color-orange">down</span> arrow keys to select
+        <p> - Type <span class="main-text">help</span> to see a list of available commands</p>
+        <p> - Type <span class="main-text">clear</span> to clear the terminal</p>
+        <p> - Use <span class="main-text">up</span> and <span class="main-text">down</span> arrow keys to select
             previous commands</p>
-        <p> - Press on <span class="color-orange">tab</span> key to auto complete the command</p>
+        <p> - Press on <span class="main-text">tab</span> key to auto complete the command</p>
     </div>
 </template>
   
@@ -51,9 +50,8 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/_variables.scss";
 
-.intro-text {
-    font-weight: bold;
-    color: $pink-red;
+.main-text{
+    color: $primary-color;
 }
 
 .name div {

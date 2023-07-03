@@ -1,6 +1,6 @@
 <template>
     <div v-for="contact in contactInfo" :key="contact.contactName">
-        <p>[{{ contact.contactName }}]: <span><a target="_blank" :href="getContactLink(contact)">{{ contact.contactLink }}</a></span></p>
+        <p><span class="main-content-heading">[{{ contact.contactName }}]</span>: <span><a target="_blank" :href="getContactLink(contact)">{{ contact.contactLink }}</a></span></p>
     </div>
 </template>
 
@@ -27,3 +27,12 @@ export default {
     },
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../styles/_variables.scss";
+
+.main-content-heading{
+    color: $content-heading-color;
+}
+
+</style>

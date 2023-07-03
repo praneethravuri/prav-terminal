@@ -43,8 +43,8 @@ export default {
   margin: 15px auto;
   width: 99%;
   height: 95vh;
-  border: 3px solid $orange;
-  border-radius: 8px;
+  border: 3px solid $main-border-color;
+  border-radius: 5px;
   overflow: hidden;
 
   &-content {

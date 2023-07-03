@@ -3,7 +3,7 @@
   <br>
   <div class="help-options">
     <p v-for="command in commandList" :key="command.commandName">
-      <span class="color-orange">{{ command.commandName }}</span>
+      <span class="content-heading" >{{ command.commandName }}</span>
       <span>&nbsp;- {{ command.commandDescription }}</span>
     </p>
   </div>
@@ -32,8 +32,13 @@ export default {
 </script>
   ``
 <style lang="scss" scoped>
+@import "../styles/_variables.scss";
 .help-options span,
 p {
   padding: 0;
+}
+
+.content-heading{
+  color: $content-heading-color;
 }
 </style>

@@ -3,7 +3,7 @@
     <div class="show-previous-commands" id="prev-commands">
       <div v-for="(command, i) in storeCommand" :key="i">
         <span>
-          <Prompt /><span class="color-orange ">{{ command }}</span>
+          <Prompt /> <span class="entered-command">{{ command }}</span>
         </span>
 
         <div v-if="command === 'help'">
@@ -38,8 +38,8 @@
         </div>
 
         <div v-else>
-          <p><span class="color-pink-red">Invalid command : '{{ command }}'</span>. Try <span
-              class="color-orange">'help'</span> to get started</p>
+          <p><span class="invalid-command">Invalid command : '{{ command }}'</span>. Try <span
+              >'help'</span> to get started</p>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
       <form @submit.prevent>
         <span class="predicted-command">{{ predictedCommand }}</span>
         <input autocomplete="off" aria-label="input-prompt" for="input-prompt" aria-labelledby="input-prompt"
-          id="command-input" :class="{ 'color-pink-red': !isCommandCorrect, 'color-white': isCommandCorrect }"
+          id="command-input" :class="{ 'incorrect-command': !isCommandCorrect, 'correct-command': isCommandCorrect }"
           ref="inputField" type="text" @keyup.enter="displayCommandOutput" @keyup.up="handleUpArrow"
           @keyup.down="handleDownArrow" autofocus v-model="inputValue" />
       </form>
@@ -242,7 +242,18 @@ form {
   top: 0;
   white-space: pre;
   margin: 0 0 0 5px;
-  color: $grey;
+  color: $predicted-text-color;
   z-index: -1;
+}
+
+.incorrect-command, .invalid-command{
+  color: $incorrect-command-color;
+}
+.correct-command{
+  color: $correct-command-color;
+}
+
+.entered-command{
+  color: $primary-color;
 }
 </style>

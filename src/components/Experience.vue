@@ -1,7 +1,7 @@
 <template>
     <div class="generate-exp">
         <div class="work" v-for="exp in experience" :key="exp.company">
-            <p class="color-orange">{{ exp.position }} @ {{ exp.company }}</p>
+            <p class="main-content-heading">{{ exp.position }} @ {{ exp.company }}</p>
             <p>- {{ exp.dateRange }}</p>
             <p>- {{ exp.location }}</p>
             <div class="work-content" v-for="content in exp.content" :key="content" style="margin: 0;">
@@ -49,6 +49,10 @@ export default {
 .work{
     padding-bottom: 10px;
     margin-bottom: 30px;
-    border-bottom: 2px dashed $bright-purple;
+    border-bottom: 2px dashed white;
+}
+
+.main-content-heading{
+    color: $content-heading-color;
 }
 </style>

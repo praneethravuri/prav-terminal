@@ -1,6 +1,6 @@
 <template>
     <div class="m-30" v-for="edu in eduction" :key="edu.institution">
-        <p class="color-pink-red">{{ edu.institution }}</p>
+        <p class="main-content-heading">{{ edu.institution }}</p>
         <p>{{ edu.degree }} | {{ edu.dateRange }}</p>
     </div>
 </template>
@@ -19,4 +19,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "../styles/_variables.scss";
+
+.main-content-heading{
+    color: $content-heading-color;
+}
+
+</style>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <div v-if="joke">
-      <p class="color-pink"> - {{ joke.question }}</p>
-      <p class="color-yellow"> - {{ joke.punchline }}</p>
+      <p> - {{ joke.question }}</p>
+      <p> - {{ joke.punchline }}</p>
     </div>
     <div v-else-if="error">
       <p>{{ error }}</p>

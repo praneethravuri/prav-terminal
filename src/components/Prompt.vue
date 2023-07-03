@@ -1,5 +1,8 @@
 <template>
-    <span class="color-lime-green">prav@portfolio:$ ~ </span>
+    <span id="guest">guest</span>
+    <span>@</span>
+    <span id="website">prav.dev</span>
+    <span>:$ ~</span>
 </template>
   
 
@@ -8,3 +11,15 @@ export default {
     name: "Prompt"
 }
 </script>
+
+<style lang="scss" scoped>
+@import "../styles/_variables.scss";
+
+#guest{
+    color: $prompt-color-1;
+}
+#website{
+    color: $prompt-color-2;
+}
+</style>
+  

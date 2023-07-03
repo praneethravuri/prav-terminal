@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <div class="sub-project m-30" v-for="project in projects" :key="project.projectName">
-            <p class="color-orange">{{ project.projectName }}</p>
+            <p class="main-content-heading">{{ project.projectName }}</p>
             <p> - {{ project.projectDescription }}</p>
             <div v-if="project.githubLink && project.websiteLink">
                 <p> - Links: <span> <a :href="project.githubLink" target="_blank">[GitHub]</a> |
@@ -108,9 +108,17 @@ export default {
     }
 
     & .sub-project {
-        border-bottom: 2px dashed $bright-purple;
+        border-bottom: 2px dashed white;
         padding-bottom: 10px;
         margin-bottom: 30px;
     }
+}
+
+.main-content-heading{
+    color: $content-heading-color;
+}
+
+a{
+    color: $green;
 }
 </style>

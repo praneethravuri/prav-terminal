@@ -4,16 +4,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: $secondary-color;
 }
 
 body {
-  background-color: $black;
+  background-color: $background;
   font-family: $source-code-pro-font;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5rem;
-  color: $white;
-  text-decoration: none;
 }
 
 :root {
@@ -23,130 +22,21 @@ body {
 html,
 body {
   scrollbar-width: thin;
-  scrollbar-color: $orange $black;
+  scrollbar-color: $secondary-color $background;
 }
 
 ::-webkit-scrollbar {
   height: 12px;
   width: 12px;
-  background: $black;
+  background: $background;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $orange;
+  background: $secondary-color;
 }
 
 ::-webkit-scrollbar-corner {
-  background: $black;
-}
-
-a {
-  text-decoration: none;
-  color: $bright-blue;
-  transition: all 0.3s ease;
-
-  &:hover {
-    color: $yellow;
-  }
-}
-
-span {
-  color: $off-white;
-}
-
-input[type="text"] {
-    background-color: transparent;
-    border: none;
-
-    font: {
-        family: $source-code-pro-font;
-        weight: 600;
-        size: 16px;
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.intro-text{
-    font-style: italic;
-    font-weight: bold;
-    color: $pink-red;
-}
-
-
-.main {
-    margin: 15px auto;
-    width: 99%;
-    height: 95vh;
-    border: 3px solid $orange;
-    border-radius: 8px;
-    overflow: hidden;
-
-    &-content {
-        overflow-y: auto;
-        height: 100%;
-        margin: 10px;
-    }
-}
-
-.color {
-  &-lime-green {
-    color: $lime-green;
-  }
-
-  &-red {
-    color: red;
-  }
-
-  &-yellow {
-    color: $yellow;
-  }
-
-  &-white {
-    color: $white;
-  }
-
-  &-purple {
-    color: $bright-purple;
-  }
-
-  &-orange {
-    color: $orange;
-  }
-
-  &-teal {
-    color: $teal;
-  }
-
-  &-electric-green {
-    color: $electric-green;
-  }
-
-  &-pink-red {
-    color: $pink-red;
-  }
-
-  &-brown {
-    color: $brown;
-  }
-
-  &-pink {
-    color: $pink;
-  }
-
-  &-turq-blue {
-    color: $turquoise-blue;
-  }
-
-  &-bright-blue {
-    color: $bright-blue;
-  }
-
-  &-off-white {
-    color: $off-white;
-  }
+  background: $background;
 }
 
 .m-30 {

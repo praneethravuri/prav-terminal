@@ -1,6 +1,6 @@
 <template>
     <div v-for="skill in skills" :key="skill.skillType">
-        <p><span class="color-turq-blue">{{ skill.skillType }}:</span> <span>{{ skill.skillsList.join(", ") }}</span></p>
+        <p><span class="main-content-heading">{{ skill.skillType }}:</span> <span>{{ skill.skillsList.join(", ") }}</span></p>
         <br>
     </div>
 </template>
@@ -21,3 +21,11 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+@import "../styles/_variables.scss";
+
+.main-content-heading{
+    color: $content-heading-color;
+}
+</style>

@@ -23,7 +23,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/_variables.scss";
 div{
     width: 75%;
+}
+
+a{
+    color: $green;
 }
 </style>
