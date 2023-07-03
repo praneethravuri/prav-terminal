@@ -1,5 +1,7 @@
 <p align="center">
+<a href="https://prav.dev/" target="_blank">
 <img alt = "website preview" src = "./banner.png">
+</a>
 </p>
 
 # Prav Terminal - Portfolio Website
