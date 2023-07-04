@@ -55,4 +55,8 @@ export default {
 .main-content-heading{
     color: $content-heading-color;
 }
+
+.generate-exp{
+    width: 75%;
+}
 </style>

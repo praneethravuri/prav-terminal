@@ -103,6 +103,9 @@ export default {
 @import "../styles/_variables.scss";
 
 .projects {
+
+    width: 75%;
+
     & div div {
         margin: 0;
     }
