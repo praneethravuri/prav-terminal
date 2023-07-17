@@ -21,9 +21,6 @@
         <div v-else-if="command === 'contact'">
           <Contact />
         </div>
-        <div v-else-if="command === 'joke'">
-          <Joke />
-        </div>
         <div v-else-if="command === 'education'">
           <Education />
         </div>
@@ -32,12 +29,6 @@
         </div>
         <div v-else-if="command === 'repo'">
           <p>Opening the github repository...</p>
-        </div>
-        <div v-else-if="command === 'music'">
-          <p>Get rickrolled!</p>
-        </div>
-        <div v-else-if="command === 'date'">
-          <p>{{ formattedDateTime }}</p>
         </div>
 
         <div v-else>
@@ -69,7 +60,6 @@ import Help from './Help.vue';
 import About from './About.vue';
 import Contact from './Contact.vue';
 import Experience from './Experience.vue';
-import Joke from './Joke.vue';
 import Education from "./Education.vue";
 import Skills from './Skills.vue';
 
@@ -82,7 +72,6 @@ export default {
     About,
     Contact,
     Experience,
-    Joke,
     Education,
     Skills
   },
@@ -91,10 +80,9 @@ export default {
       inputValue: '',
       currentTab: '',
       storeCommand: [],
-      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "joke", "education", "skills", "date", "repo", "date", "music"],
+      correctCommands: ["help", "projects", "about", "experience", "contact", "clear", "education", "skills", "repo"],
       currentIndex: -1,
       previousCommands: [],
-      formattedDateTime: '',
       predictedCommand: '',
     };
   },
@@ -118,17 +106,7 @@ export default {
         this.addToCommandHistory(command);
         window.open("https://github.com/praneethravuri/prav-terminal", "_blank");
       }
-      else if (this.inputValue.toLowerCase().trim() === "music") {
-        const command = this.inputValue.toLowerCase().trim();
-        this.addToCommandHistory(command);
-        window.open("https://www.youtube.com/watch?v=a3Z7zEc7AXQ", "_blank");
-      }
-      else if (this.inputValue.toLowerCase().trim() === "date") {
-        const command = this.inputValue.toLowerCase().trim();
-        this.addToCommandHistory(command);
-        const date = new Date();
-        this.formattedDateTime = this.formatDateTime(date);
-      } else {
+      else {
         const command = this.inputValue.toLowerCase().trim();
         this.addToCommandHistory(command);
       }
@@ -164,22 +142,6 @@ export default {
         this.currentIndex = this.previousCommands.length;
         this.inputValue = '';
       }
-    },
-    formatDateTime(date) {
-      const year = date.getFullYear();
-      const month = date.getMonth();
-      const day = date.getDate();
-      const hours = date.getHours();
-      const minutes = date.getMinutes();
-      const seconds = date.getSeconds();
-
-      const formattedMonth = String(month + 1).padStart(2, '0');
-      const formattedDay = String(day).padStart(2, '0');
-      const formattedHours = String(hours).padStart(2, '0');
-      const formattedMinutes = String(minutes).padStart(2, '0');
-      const formattedSeconds = String(seconds).padStart(2, '0');
-
-      return `${formattedMonth}/${formattedDay}/${year} ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
     },
   },
   mounted() {
