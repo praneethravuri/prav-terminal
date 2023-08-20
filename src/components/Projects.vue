@@ -44,7 +44,8 @@ export default {
                 {
                     projectName: "Weatherly",
                     projectDescription: "Weatherly is a user-friendly website that seamlessly integrates with Google Maps to provide you with accurate and up-to-date weather information for any location around the world ",
-                    websiteLink: "https://weatherly-google.netlify.app/",
+                    githubLink: "https://github.com/praneethravuri/weatherly",
+                    websiteLink: "https://weatherlycloud.netlify.app/",
                     tags: ["Javascript", "Sass", "jQuery"]
                 },
                 {
