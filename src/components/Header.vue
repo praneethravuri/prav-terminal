@@ -20,7 +20,7 @@
     <div class="instructions">
         <p> - Type <span class="main-text">help</span> to see a list of available commands</p>
         <p> - Type <span class="main-text">clear</span> to clear the terminal</p>
-        <p> - Use <span class="main-text">up</span> and <span class="main-text">down</span> arrow keys to select
+        <p> - Use <span class="main-text">up</span> and <span class="main-text">down</span> arrow keys to toggle between
             previous commands</p>
         <p> - Press on <span class="main-text">tab</span> key to auto complete the command</p>
     </div>

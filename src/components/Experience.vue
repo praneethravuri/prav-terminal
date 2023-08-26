@@ -36,6 +36,16 @@ export default {
                         "Implemented front-end performance optimizations, including lazy loading and code minification, resulting in a significant 15 % reduction in the website's overall file size",
                         "Collaborated with UX designers to ensure seamless compatibility between design elements and application programming interfaces, guaranteeing optimal product functionality"
                     ]
+                },
+                {
+                    company: "IEEE GRIET SB",
+                    position: "Web Developer",
+                    location: "Hyderabad, India",
+                    dateRange: "Aug. 2019 - Dec. 2021",
+                    content: [
+                        "Orchestrated a 5-person team in overhauling the IEEE student body website, elevating functionality and design.",
+                        " Successfully recovered lost data, reinstating critical information for the student community."
+                    ]
                 }
             ]
         };

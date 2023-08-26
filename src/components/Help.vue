@@ -19,10 +19,10 @@ export default {
         { commandName: "about", commandDescription: "Provides information about me" },
         { commandName: "experience", commandDescription: "Shows my work experience" },
         { commandName: "projects", commandDescription: "Lists all the projects I have worked on" },
-        { commandName: "skills", commandDescription: "List of all technologies I have worked with" },
-        { commandName: "contact", commandDescription: "Shares my contact information" },
-        { commandName: "education", commandDescription: "Shows where I have studied" },
-        { commandName: "repo", commandDescription: "Open this project's github repository" }
+        { commandName: "skills", commandDescription: "Lists all the technologies I have worked with" },
+        { commandName: "contact", commandDescription: "Provides my contact information" },
+        { commandName: "education", commandDescription: "Shows my education history" },
+        { commandName: "repo", commandDescription: "Open this project's GitHub repository" }
       ]
     };
   }
