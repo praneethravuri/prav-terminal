@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/prav-terminal/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/0b8a8d57-f61b-4c22-965e-f2c6673360ad/deploy-status" />
+  <a href="https://app.netlify.com/sites/stellular-meerkat-1f5cc3/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/780ec15f-632a-451a-bf5d-a4840220a26f/deploy-status" />
   </a>
 </p>
 
