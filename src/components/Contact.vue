@@ -12,7 +12,7 @@ export default {
             contactInfo: [
                 { contactName: "Github", contactLink: "https://github.com/praneethravuri" },
                 { contactName: "LinkedIn", contactLink: "https://www.linkedin.com/in/praneeth-ravuri2500/" },
-                { contactName: "Email", contactLink: "pravdev10@gmail.com" },
+                { contactName: "Email", contactLink: "prav2500@gmail.com" },
                 { contactName: "Resume", contactLink: "https://drive.google.com/file/d/1AiUdUmqhrWz8wlmGVeOhDD2Pr5CBxW7C/view" },
             ],
         };
