@@ -7,7 +7,7 @@
             <span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> /
             <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/" target="_blank">LinkedIn</a></span> /
             <span><a href="mailto:pravdev10@gmail.com">Email</a></span> /
-            <span><a href="https://drive.google.com/file/d/1AiUdUmqhrWz8wlmGVeOhDD2Pr5CBxW7C/view"
+            <span><a href="https://drive.google.com/drive/folders/1lMHMLOjppCR9RUHhYGUjd86s5iRf8vBO?usp=sharing"
                     target="_blank">Resume</a></span>
         </p>
     </div>
