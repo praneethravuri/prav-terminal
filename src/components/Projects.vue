@@ -92,6 +92,12 @@ export default {
                     projectDescription: "A frontend project made with Vue.js. Includes functions like add, update, and delete tasks and toggle set reminders",
                     githubLink: "https://github.com/praneethravuri/Task-Tracker",
                     tags: ["Vue.js", "Javascript"]
+                },
+                {
+                    projectName : "Traffic Congestion Reduction with SARSA",
+                    projectDescription : 'The "Traffic Congestion Reduction with SARSA" applies SARSA reinforcement learning for efficient urban traffic and pedestrian management, incorporating simulation, algorithmic implementation, and evaluation to enhance safety and reduce congestion.',
+                    githubLink : "https://github.com/praneethravuri/traffic-congestion-reduction-with-SARSA",
+                    tags : ["Python", "SARSA", "Reinforcement Learning", "Pygame"]
                 }
 
             ],
