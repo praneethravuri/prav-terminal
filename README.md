@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/voluble-brigadeiros-e91a73/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/0a22ce8d-8200-446b-9b3b-b5e35e5cd733/deploy-status" />
+  <a href="https://app.netlify.com/sites/reliable-druid-a6a637/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/e1437927-3cc5-41b6-ab6e-d6da8f039782/deploy-status" />
   </a>
 </p>
 
