@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/stellular-meerkat-1f5cc3/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/780ec15f-632a-451a-bf5d-a4840220a26f/deploy-status" />
+  <a href="https://app.netlify.com/sites/voluble-brigadeiros-e91a73/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/0a22ce8d-8200-446b-9b3b-b5e35e5cd733/deploy-status" />
   </a>
 </p>
 
@@ -22,7 +22,7 @@
 
 </h3>
 
-### [https://prav.dev/](https://prav.dev/)
+### [https://praneethravuri.com/](https://praneethravuri.com/)
 
 Inspired By - [Yassine Fathi](https://term.m4tt72.com/)
 
