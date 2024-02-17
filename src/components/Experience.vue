@@ -23,8 +23,10 @@ export default {
                     location: "Hyderabad, India",
                     dateRange: "Jan. 2022 - Jun. 2022",
                     content: [
-                        "Developed responsive and user-friendly web application interfaces using front-end technologies and frameworks, achieving a remarkable 34% reduction in latency",
-                        "Developed and maintained enterprise web applications, leveraging RESTful APIs and CDNs to achieve a notable 30% improvement in system performance."
+                        "Collaborated with a team to develop a real-time internal company chat application, leveraging Socket.IO and Express.js.",
+                        "Facilitated REST API integration, contributing to a 25% improvement in data retrieval speeds and system updates.",
+                        "Assisted in implementing CI/CD pipelines using GitLab, automating deployment to enhance efficiency and reduce errors.",
+                        "Partnered with senior engineers on microservices architecture, boosting application scalability and performance."
                     ]
                 },
                 {
@@ -33,8 +35,9 @@ export default {
                     location: "Hyderabad, India",
                     dateRange: "Aug. 2021 - Oct. 2021",
                     content: [
-                        "Implemented front-end performance optimizations, including lazy loading and code minification, resulting in a significant 15 % reduction in the website's overall file size",
-                        "Collaborated with UX designers to ensure seamless compatibility between design elements and application programming interfaces, guaranteeing optimal product functionality"
+                        "Rectified over 20 cross-browser compatibility issues, boosting user interface consistency and adherence to web standards.",
+                        "Morphed wireframes into functional, responsive online experiences, ensuring seamless integration with web services.",
+                        "Managed technical documentation on front-end development guidelines, promoting knowledge sharing on best practices."
                     ]
                 },
                 {
@@ -56,17 +59,18 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/_variables.scss";
-.work{
+
+.work {
     padding-bottom: 10px;
     margin-bottom: 30px;
     border-bottom: 2px dashed $grey;
 }
 
-.main-content-heading{
+.main-content-heading {
     color: $content-heading-color;
 }
 
-.generate-exp{
+.generate-exp {
     width: 75%;
 }
 </style>
