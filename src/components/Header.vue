@@ -6,7 +6,7 @@
         <p class="m-30">
             <span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> /
             <span><a href="https://www.linkedin.com/in/praneeth-ravuri2500/" target="_blank">LinkedIn</a></span> /
-            <span><a href="mailto:pravdev10@gmail.com">Email</a></span> /
+            <span><a href="mailto:pravdevrav@gmail.com">Email</a></span> /
             <span><a href="https://docs.google.com/document/d/1bSj0HukvNhu8Iar5VKDKYtYJdH7DauMO/edit?usp=sharing&ouid=101083744229554778247&rtpof=true&sd=true"
                     target="_blank">Resume</a></span>
         </p>
