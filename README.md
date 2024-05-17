@@ -13,8 +13,6 @@
 
 </h3>
 
-### [https://praneethravuri.com/](https://praneethravuri.com/)
-
 Inspired By - [Yassine Fathi](https://term.m4tt72.com/)
 
 ## Project setup
