@@ -6,15 +6,6 @@
 
 # Prav Terminal - Portfolio Website
 
-
-</p>
-
-<p align="center">
-  <a href="https://app.netlify.com/sites/reliable-druid-a6a637/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/e1437927-3cc5-41b6-ab6e-d6da8f039782/deploy-status" />
-  </a>
-</p>
-
 <h3 align="center">
 <img alt="Alt text" src="https://img.shields.io/badge/Vue.js-4FC08D.svg?style=for-the-badge&logo=vuedotjs&logoColor=white"/>
 <img alt="Alt text" src="https://img.shields.io/badge/Sass-CC6699.svg?style=for-the-badge&logo=Sass&logoColor=white"/>
