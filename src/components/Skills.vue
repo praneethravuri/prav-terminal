@@ -11,11 +11,22 @@ export default {
     data() {
         return {
             skills: [
-                { skillType: "Core", skillsList: ["Python", "Javascript", "HTML", "CSS", "C"] },
-                { skillType: "Frameworks", skillsList: ["Node.js", "Express.js", "Vue.js", "jQuery", "Scss", "Bootstrap", "Flask"] },
-                { skillType: "Databases", skillsList: ["MongoDB", "MySQL"] },
-                { skillType: "Tools", skillsList: ["Git", "Github", "VS Code", "Pycharm", "Jupyter"] },
-                { skillType: "Miscellaneous", skillsList: ["Zorba", "JSONiq"] },
+                { 
+                    skillType: "Languages", 
+                    skillsList: ["Python", "JavaScript", "TypeScript", "HTML", "CSS", "C", "C++", "Java", "Go"]
+                },
+                { 
+                    skillType: "Frameworks & Libraries", 
+                    skillsList: ["Vue.js", "React", "Express.js", "Node.js", "Flask", "NumPy", "Redux", "Socket.IO", "Selenium", "Jest", "BeautifulSoup", "Requests", "jQuery", "Sass", "Tailwind CSS", "Bootstrap"]
+                },
+                { 
+                    skillType: "Databases", 
+                    skillsList: ["SQL", "MySQL", "MongoDB"]
+                },
+                { 
+                    skillType: "Developer Tools", 
+                    skillsList: ["Git", "GitHub", "Docker", "Visual Studio Code", "PyCharm", "Jupyter", "Linux", "Windows", "Postman", "AWS", "Vite", "Next.js", "Unix", "Jenkins", "Kubernetes"]
+                },
             ]
         }
     }
@@ -24,7 +35,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/_variables.scss";
-
 .main-content-heading{
     color: $content-heading-color;
 }

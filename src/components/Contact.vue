@@ -11,9 +11,9 @@ export default {
         return {
             contactInfo: [
                 { contactName: "Github", contactLink: "https://github.com/praneethravuri" },
-                { contactName: "LinkedIn", contactLink: "https://www.linkedin.com/in/praneeth-ravuri2500/" },
+                { contactName: "LinkedIn", contactLink: "https://www.linkedin.com/in/prav25/" },
                 { contactName: "Email", contactLink: "pravdevrav@gmail.com" },
-                { contactName: "Resume", contactLink: "https://docs.google.com/document/d/1L8zbUhIr2HkyNlMCm18pRpBg59q2NNvc/edit?usp=sharing&ouid=109109712910137947054&rtpof=true&sd=true" },
+                { contactName: "Resume", contactLink: "https://drive.google.com/file/d/1f2JMA1AWkstHzQg94QZNgl9sE4fgB9VH/view?usp=drive_link" },
             ],
         };
     },
