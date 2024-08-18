@@ -24,83 +24,52 @@ export default {
     name: "Projects",
     data() {
         return {
-            projects: [
-                {
-                    projectName: "PRAV Terminal",
-                    projectDescription:
-                        "A retro and terminal themed website made with Vue.js and Scss. This single page application behaves like a terminal and has server-side-rendering",
-                    githubLink: "https://github.com/praneethravuri/prav-terminal",
-                    websiteLink: "https://prav.dev/",
-                    tags: ["Vue.js", "Javascript", "Scss"],
-                },
-                {
-                    projectName: "PRAV V2",
-                    projectDescription:
-                        "Second iteration of my personal website designed with Vue.js and Scss and hosted on Netlify",
-                    githubLink: "https://github.com/praneethravuri/PRAV-V2",
-                    websiteLink: "https://prav-v2.netlify.app/",
-                    tags: ["Vue.js", "Javascript", "Scss"],
-                },
-                {
-                    projectName: "Weatherly",
-                    projectDescription: "Weatherly is a user-friendly website that seamlessly integrates with Google Maps to provide you with accurate and up-to-date weather information for any location around the world ",
-                    githubLink: "https://github.com/praneethravuri/weatherly",
-                    websiteLink: "https://weatherlycloud.netlify.app/",
-                    tags: ["Javascript", "Sass", "jQuery"]
-                },
-                {
-                    projectName: "Horizon Airlines Bookings",
-                    projectDescription: "A full-stack application built using Flask and MongoDB to book and manage flight reservations. This application was created for the INFS 750 course at GMU",
-                    githubLink: "https://github.com/praneethravuri/Horizon-Airlines-Bookings",
-                    tags: ["Javascript", "Flask", "MongoDB", "Bootstrap"]
-                },
-                {
-                    projectName: "Patriot Board",
-                    projectDescription: "A collaborative project designed to improve the UI of GMU's course registration website",
-                    githubLink: "https://github.com/praneethravuri/Patriot-Board",
-                    websiteLink: "http://mason.gmu.edu/~kdonapat/index",
-                    tags: ["Javascript", "Selenium", "jQuery"]
-                },
-                {
-                    projectName: "PRAV",
-                    projectDescription:
-                        "First iteration of my personal website designed on the fly with Sass and Vanilla Javascript and hosted on Netlify",
-                    websiteLink: "https://prav-v1.netlify.app/",
-                    githubLink: "https://github.com/praneethravuri/PRAV",
-                    tags: ["Javascript", "Sass", "jQuery"],
-                },
-                {
-                    projectName: "Invespo",
-                    projectDescription: "Invespo: A stock trading front-end for SWE 632 course @ George Mason Univ. Built with HTML, CSS, JS, jQuery. Explores interface design principles in user-centric design",
-                    githubLink: "https://github.com/praneethravuri/Invespo",
-                    tags: ["Javascript", "jQuery", "Bootstrap"]
-                },
-                {
-                    projectName: "Jet Sphere",
-                    projectDescription: "A backend web application with JWT user authentication and validation, manage flight bookings, update / delete account, administrative database changes, and session management",
-                    githubLink: "https://github.com/praneethravuri/Jet-Sphere",
-                    tags: ["Javascript", "MongoDB", "Node", "Express.js"]
-                },
-                {
-                    projectName: "Amazon Product Information Scraper",
-                    projectDescription: "A web-scraping bot that retrieves product names, prices, review stars, and review counts for a specific category",
-                    githubLink: "https://github.com/praneethravuri/Amazon-Product-Information-Scraper",
-                    tags: ["Python", "Selenium", "BeautifulSoup"]
-                },
-                {
-                    projectName: "Task Tracker",
-                    projectDescription: "A frontend project made with Vue.js. Includes functions like add, update, and delete tasks and toggle set reminders",
-                    githubLink: "https://github.com/praneethravuri/Task-Tracker",
-                    tags: ["Vue.js", "Javascript"]
-                },
-                {
-                    projectName : "Traffic Congestion Reduction with SARSA",
-                    projectDescription : 'The "Traffic Congestion Reduction with SARSA" applies SARSA reinforcement learning for efficient urban traffic and pedestrian management, incorporating simulation, algorithmic implementation, and evaluation to enhance safety and reduce congestion.',
-                    githubLink : "https://github.com/praneethravuri/traffic-congestion-reduction-with-SARSA",
-                    tags : ["Python", "SARSA", "Reinforcement Learning", "Pygame"]
-                }
-
-            ],
+projects = [
+    {
+        projectName: "LLM Chat Application",
+        projectDescription: "Built an interactive chat app using pre-trained LLMs for real-time Q&A, integrating Hugging Face Transformers, boosting response accuracy by 40%. Implemented RAG, increasing answering speed by 35%. Designed a scalable full-stack solution with FastAPI and SQL, reducing query processing time by 30%. Used Figma for UI design and Redux for consistent performance.",
+        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "FastAPI", "Python", "SQL", "Figma", "Redux", "Generative AI", "SearXNG"].
+            githubLink : "https://github.com/praneethravuri/open-llms"
+    },
+    {
+        projectName: "Traffic Congestion Reduction with SARSA",
+        projectDescription: 'The "Traffic Congestion Reduction with SARSA" applies SARSA reinforcement learning for efficient urban traffic and pedestrian management, incorporating simulation, algorithmic implementation, and evaluation to enhance safety and reduce congestion. Applied a SARSA-based reinforcement learning model optimizing traffic signal timings, reducing congestion by 33% and average travel time by 25%. Enhanced traffic flow efficiency by 20% and reduced idle time at intersections by 30% with improved management strategies.',
+        githubLink: "https://github.com/praneethravuri/traffic-congestion-reduction-with-SARSA",
+        tags: ["Python", "SARSA", "Reinforcement Learning", "Pygame", "AI", "NumPy"]
+    },
+    {
+        projectName: "Amazon Product Information Scraper",
+        projectDescription: "A web-scraping bot that retrieves product names, prices, review stars, and review counts for a specific category. Developed an automated tool for e-commerce intelligence, extracting Amazon product data for pricing analysis and trend monitoring, increasing data analysis efficiency by 50%. Simplified data collection by capturing product details and exporting to Excel to boost strategic decision-making analysis.",
+        githubLink: "https://github.com/praneethravuri/Amazon-Product-Information-Scraper",
+        tags: ["Python", "Selenium", "BeautifulSoup", "Requests"]
+    },
+    {
+        projectName: "Social Media Website",
+        projectDescription: "Designed a scalable, full-stack social media web app with responsive design, reusable components, MVC architecture, and user-centric features, improving development efficiency by 30%. Executed Jest-based unit testing to ensure system reliability, and upholding high functionality and security standards.",
+        tags: ["React", "Next.js", "Node.js", "TypeScript", "Tailwind CSS", "MongoDB", "Shad-cn", "Jest"],
+        githubLink : "https://github.com/praneethravuri/connexion"
+    },
+    {
+        projectName: "Weatherly",
+        projectDescription: "Weatherly is a user-friendly website that seamlessly integrates with Google Maps to provide you with accurate and up-to-date weather information for any location around the world",
+        githubLink: "https://github.com/praneethravuri/weatherly",
+        websiteLink: "https://weatherlycloud.netlify.app/",
+        tags: ["Javascript", "Sass", "jQuery"]
+    },
+    {
+        projectName: "Horizon Airlines Bookings",
+        projectDescription: "A full-stack application built using Flask and MongoDB to book and manage flight reservations. This application was created for the INFS 750 course at GMU",
+        githubLink: "https://github.com/praneethravuri/Horizon-Airlines-Bookings",
+        tags: ["Javascript", "Flask", "MongoDB", "Bootstrap"]
+    },
+    {
+        projectName: "Patriot Board",
+        projectDescription: "A collaborative project designed to improve the UI of GMU's course registration website",
+        githubLink: "https://github.com/praneethravuri/Patriot-Board",
+        websiteLink: "http://mason.gmu.edu/~kdonapat/index",
+        tags: ["Javascript", "Selenium", "jQuery"]
+    }
+]
         }
     }
 }
