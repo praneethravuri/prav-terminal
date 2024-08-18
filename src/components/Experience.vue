@@ -23,10 +23,11 @@ export default {
                     location: "Hyderabad, India",
                     dateRange: "Jan. 2022 - Jun. 2022",
                     content: [
-                        "Collaborated with a team to develop a real-time internal company chat application, leveraging Socket.IO and Express.js.",
-                        "Facilitated REST API integration, contributing to a 25% improvement in data retrieval speeds and system updates.",
-                        "Assisted in implementing CI/CD pipelines using GitLab, automating deployment to enhance efficiency and reduce errors.",
-                        "Partnered with senior engineers on microservices architecture, boosting application scalability and performance."
+                        "Collaborated with a team to develop a real-time internal company chat application, leveraging Socket.IO.",
+                        "Facilitated REST API integration, contributing to a 25% improvement in data retrieval speeds & system updates.",
+                        "Coordinated with a cross-functional team to implement CI/CD pipelines with Jenkins, Docker, and Kubernetes.",
+                        "Partnered with senior software engineers on microservices architecture, boosting application scalability and performance.",
+                        "Engaged in Agile practices, code reviews, pair programming, and documented API endpoints and software architecture."
                     ]
                 },
                 {
@@ -35,21 +36,13 @@ export default {
                     location: "Hyderabad, India",
                     dateRange: "Aug. 2021 - Oct. 2021",
                     content: [
-                        "Rectified over 20 cross-browser compatibility issues, boosting user interface consistency and adherence to web standards.",
-                        "Morphed wireframes into functional, responsive online experiences, ensuring seamless integration with web services.",
-                        "Managed technical documentation on front-end development guidelines, promoting knowledge sharing on best practices."
+                        "Resolved over 20 cross-browser compatibility issues, boosting user interface consistency and adherence to web standards.",
+                        "Translated wireframes into functional, responsive online experiences, ensuring seamless integration with web services.",
+                        "Managed technical documentation on front-end development guidelines, promoting knowledge sharing on best practices.",
+                        "Implemented Jest and Selenium for unit and integration tests, improving code reliability by 40%.",
+                        "Increased web app responsiveness and interactivity with jQuery and AJAX requests, reducing server response time by 25%."
                     ]
                 },
-                {
-                    company: "IEEE GRIET SB",
-                    position: "Web Developer",
-                    location: "Hyderabad, India",
-                    dateRange: "Aug. 2019 - Dec. 2021",
-                    content: [
-                        "Orchestrated a 5-person team in overhauling the IEEE student body website, elevating functionality and design.",
-                        " Successfully recovered lost data, reinstating critical information for the student community."
-                    ]
-                }
             ]
         };
     }
