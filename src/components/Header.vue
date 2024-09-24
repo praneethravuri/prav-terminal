@@ -13,7 +13,6 @@
     </div>
 
     <div class="ascii">
-        <p>A retro terminal themed portfolio website by...</p>
         <pre id="ascii-art">{{ name }}</pre>
     </div>
 
