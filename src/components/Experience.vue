@@ -10,13 +10,25 @@
         </div>
     </div>
 </template>
-  
+
 <script>
 export default {
     name: "Experience",
     data() {
         return {
             experience: [
+                {
+                    company: "Prodapt",
+                    position: "Data Analyst",
+                    location: "Richardson, Texas",
+                    dateRange: "Oct. 2024 - Present",
+                    content: [
+                        "Built and optimized data pipeline processing IPFIX data from 1000+ OLTs using multithreading, reducing processing time by 80%",
+                        "Engineered MongoDB to Google Cloud BigQuery integration for real-time network analytics, managing 100+ GB daily data flow",
+                        "Created AI-powered monitoring system using LLMs to analyze network performance and provide automated customer insights",
+                        "Reduced network issue resolution time by 40% through automated anomaly detection system handling 10M+ daily events"
+                    ]
+                },
                 {
                     company: "Cognizant",
                     position: "Software Development Intern",
@@ -43,6 +55,7 @@ export default {
                         "Increased web app responsiveness and interactivity with jQuery and AJAX requests, reducing server response time by 25%."
                     ]
                 },
+
             ]
         };
     }
