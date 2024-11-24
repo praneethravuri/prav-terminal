@@ -1,7 +1,7 @@
 <template>
     <div class="banner-text">
         <p>
-            <Prompt />(c) PRAV. All rights reserved 2023.
+            <Prompt />(c) PRAV. All rights reserved 2024.
         </p>
         <p class="m-30">
             <span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> /
