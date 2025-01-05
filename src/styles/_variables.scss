@@ -1,27 +1,19 @@
-// Font configuration
 @font-face {
-  font-family: 'CascadiaCode';
-  src: url(./source-code-pro.ttf);
-  font-display: swap;
-}
+    font-family: 'CascadiaCode';
+    src: url(./source-code-pro.ttf);
+    display: swap;
+  }
 
-// Core typography
-$source-code-pro-font: 'Source Code Pro', monospace;
-
-// Primary Terminal Colors
-$background: #1e2227;              // Soft dark background
-$primary-color: #61afef;          // Soft blue
-$secondary-color: #98c379;        // Muted green
-$content-heading-color: #56b6c2;  // Soft teal
-
-// Terminal Elements
-$predicted-text-color: #828997;   // Subtle gray
-$incorrect-command-color: #e06c75; // Soft red
-$correct-command-color: #98c379;   // Muted green
-$prompt-color-1: #d19a66;         // Warm orange
-$prompt-color-2: #56b6c2;         // Soft teal
-$main-border-color: #61afef;      // Soft blue
-
-// Utility Colors
-$grey: #828997;                   // Medium gray
-$green: #98c379;                  // Muted green
+$source-code-pro-font : 'Source Code Pro', monospace;
+$background : #09141b;
+$predicted-text-color : #7a7a7a;
+$grey : #808080;
+$incorrect-command-color : #d15123;
+$correct-command-color : #027c9b;
+$secondary-color : #deb88d;
+$prompt-color-1 : #fca02f;
+$prompt-color-2 : #027c9b;
+$main-border-color : #fca02f;
+$primary-color: #4393d4;
+$content-heading-color: #1bbcdd;
+$green : #fca02f;
