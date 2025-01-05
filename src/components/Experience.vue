@@ -4,6 +4,7 @@
             <p class="main-content-heading">{{ exp.position }} @ {{ exp.company }}</p>
             <p>- {{ exp.dateRange }}</p>
             <p>- {{ exp.location }}</p>
+            <br />
             <div class="work-content" v-for="content in exp.content" :key="content" style="margin: 0;">
                 <p>- {{ content }}</p>
                 <br />
@@ -20,14 +21,13 @@ export default {
             experience: [
                 {
                     company: "Prodapt",
-                    position: "Data Analyst",
-                    location: "Richardson, Texas",
+                    position: "Software Engineer",
+                    location: "Richardson, Texas (On-site)",
                     dateRange: "Oct. 2024 - Present",
                     content: [
-                        "Built and optimized data pipeline processing IPFIX data from 1000+ OLTs using multithreading, reducing processing time by 80%",
-                        "Engineered MongoDB to Google Cloud BigQuery integration for real-time network analytics, managing 100+ GB daily data flow",
-                        "Created AI-powered monitoring system using LLMs to analyze network performance and provide automated customer insights",
-                        "Reduced network issue resolution time by 40% through automated anomaly detection system handling 10M+ daily events"
+                        "At Prodapt, I took on the challenge of managing telemetry data from over 5,000 network devices. Picture 5,000 people talking all at once—it's chaos unless you know how to listen. Using Go and Kafka, I built a system that could handle this chatter and make sense of it.",
+                        "One of my key tasks was configuring a decoder to handle enterprise-specific data for over 170 network metrics. It wasn't built from scratch, but I made sure it worked perfectly for our needs. I also added a safety net—if the database ever went down, the system would save data to files so we wouldn't lose anything critical.",
+                        "With over 100GB of data flowing in every day, the system needed to be super reliable. I designed it to be fault-tolerant—if one part stopped working, another stepped in to keep things running. This setup helped us catch issues early and ensure smooth operations.",
                     ]
                 },
                 {
@@ -36,11 +36,9 @@ export default {
                     location: "Hyderabad, India",
                     dateRange: "Jan. 2022 - Jun. 2022",
                     content: [
-                        "Collaborated with a team to develop a real-time internal company chat application, leveraging Socket.IO.",
-                        "Facilitated REST API integration, contributing to a 25% improvement in data retrieval speeds & system updates.",
-                        "Coordinated with a cross-functional team to implement CI/CD pipelines with Jenkins, Docker, and Kubernetes.",
-                        "Partnered with senior software engineers on microservices architecture, boosting application scalability and performance.",
-                        "Engaged in Agile practices, code reviews, pair programming, and documented API endpoints and software architecture."
+                        "At Cognizant, I worked on making real-time communication simple and seamless. I built a platform using WebSocket protocols that could handle 500+ users chatting at once—like hosting a giant virtual event where everyone's conversations flowed smoothly, no lag or hiccups.",
+                        "I also rolled up my sleeves to improve API performance. By adding Redis caching and connection pooling, I sped up response times big time. Imagine turning a crowded highway into one with express lanes—everything moves faster, and frequent users get even quicker access.",
+                        "Another cool project was modernizing the infrastructure. I moved things to microservices on Kubernetes and AWS, breaking down a big, clunky system into smaller, flexible pieces that were easier to manage and scale. Using AWS Lambda, EC2, and S3, we built something robust and ready for anything.",
                     ]
                 },
                 {
@@ -49,11 +47,10 @@ export default {
                     location: "Hyderabad, India",
                     dateRange: "Aug. 2021 - Oct. 2021",
                     content: [
-                        "Resolved over 20 cross-browser compatibility issues, boosting user interface consistency and adherence to web standards.",
-                        "Translated wireframes into functional, responsive online experiences, ensuring seamless integration with web services.",
-                        "Managed technical documentation on front-end development guidelines, promoting knowledge sharing on best practices.",
-                        "Implemented Jest and Selenium for unit and integration tests, improving code reliability by 40%.",
-                        "Increased web app responsiveness and interactivity with jQuery and AJAX requests, reducing server response time by 25%."
+                        "My internship at Stige was where I fell in love with frontend development. One of my first challenges was fixing cross-browser compatibility issues. Think of it like making sure a website looks great and works perfectly whether someone's using Chrome, Safari, or even an ancient version of Internet Explorer.",
+                        "I also got hands-on with performance optimization, using tricks like lazy loading and caching to make websites faster and smoother. It's like setting up a library where the most popular books are front and center, but everything else is neatly organized and easy to find.",
+                        "One of my favorite projects was implementing responsive design with Bootstrap. It was all about creating web pages that looked amazing whether you were on a massive desktop screen or a tiny phone—content that just fit, no matter what.",
+                        "This experience taught me the importance of clean, scalable design and how even small changes can make a big impact on user experience.",
                     ]
                 },
 
