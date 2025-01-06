@@ -1,7 +1,7 @@
 <template>
     <div class="banner-text">
         <p>
-            <Prompt />(c) PRAV. All rights reserved 2024.
+            <Prompt />(c) PRAV. All rights reserved {{ currentYear }}.
         </p>
         <p class="m-30">
             <span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> /
@@ -36,6 +36,7 @@ export default {
     data() {
         return {
             name: "Error occurred while rendering ascii art",
+                currentYear : new Date().getFullYear(),
         };
     },
     mounted() { // Corrected the name of the lifecycle hook to mounted
