@@ -41,18 +41,6 @@ export default {
                         "Another cool project was modernizing the infrastructure. I moved things to microservices on Kubernetes and AWS, breaking down a big, clunky system into smaller, flexible pieces that were easier to manage and scale. Using AWS Lambda, EC2, and S3, we built something robust and ready for anything.",
                     ]
                 },
-                {
-                    company: "Stige",
-                    position: "Frontend Intern",
-                    location: "Hyderabad, India",
-                    dateRange: "Aug. 2021 - Oct. 2021",
-                    content: [
-                        "My internship at Stige was where I fell in love with frontend development. One of my first challenges was fixing cross-browser compatibility issues. Think of it like making sure a website looks great and works perfectly whether someone's using Chrome, Safari, or even an ancient version of Internet Explorer.",
-                        "I also got hands-on with performance optimization, using tricks like lazy loading and caching to make websites faster and smoother. It's like setting up a library where the most popular books are front and center, but everything else is neatly organized and easy to find.",
-                        "One of my favorite projects was implementing responsive design with Bootstrap. It was all about creating web pages that looked amazing whether you were on a massive desktop screen or a tiny phone—content that just fit, no matter what.",
-                        "This experience taught me the importance of clean, scalable design and how even small changes can make a big impact on user experience.",
-                    ]
-                },
 
             ]
         };
