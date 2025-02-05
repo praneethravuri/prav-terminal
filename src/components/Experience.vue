@@ -32,9 +32,9 @@ export default {
                 },
                 {
                     company: "Cognizant",
-                    position: "Software Development Intern",
+                    position: "Software Engineer",
                     location: "Hyderabad, India",
-                    dateRange: "Jan. 2022 - Jun. 2022",
+                    dateRange: "Jun. 2021 - Jun. 2022",
                     content: [
                         "At Cognizant, I worked on making real-time communication simple and seamless. I built a platform using WebSocket protocols that could handle 500+ users chatting at once—like hosting a giant virtual event where everyone's conversations flowed smoothly, no lag or hiccups.",
                         "I also rolled up my sleeves to improve API performance. By adding Redis caching and connection pooling, I sped up response times big time. Imagine turning a crowded highway into one with express lanes—everything moves faster, and frequent users get even quicker access.",
