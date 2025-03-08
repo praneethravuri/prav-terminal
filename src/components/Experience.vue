@@ -23,7 +23,7 @@ export default {
                     company: "Prodapt",
                     position: "Software Engineer",
                     location: "Richardson, Texas (On-site)",
-                    dateRange: "Oct. 2024 - Present",
+                    dateRange: "Jul. 2024 - Present",
                     content: [
                         "At Prodapt, I took on the challenge of managing telemetry data from over 5,000 network devices. Picture 5,000 people talking all at once—it's chaos unless you know how to listen. Using Go and Kafka, I built a system that could handle this chatter and make sense of it.",
                         "One of my key tasks was configuring a decoder to handle enterprise-specific data for over 170 network metrics. It wasn't built from scratch, but I made sure it worked perfectly for our needs. I also added a safety net—if the database ever went down, the system would save data to files so we wouldn't lose anything critical.",
