@@ -22,7 +22,8 @@ export default {
         { commandName: "skills", commandDescription: "Lists all the technologies I have worked with" },
         { commandName: "contact", commandDescription: "Provides my contact information" },
         { commandName: "education", commandDescription: "Shows my education history" },
-        { commandName: "repo", commandDescription: "Open this project's GitHub repository" }
+        { commandName: "repo", commandDescription: "Open this project's GitHub repository" },
+        {commandName: "clear", commandDescription: "Clears the terminal"},
       ]
     };
   }
