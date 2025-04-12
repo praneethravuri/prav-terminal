@@ -32,7 +32,7 @@ export default {
                 },
                 {
                     company: "Cognizant",
-                    position: "Software Development Intern",
+                    position: "Software Engineer Intern",
                     location: "Hyderabad, India",
                     dateRange: "Jan. 2022 - Jun. 2022",
                     content: [
