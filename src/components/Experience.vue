@@ -25,20 +25,20 @@ export default {
                     location: "Richardson, Texas (On-site)",
                     dateRange: "Oct. 2024 - Present",
                     content: [
-                        "At Prodapt, I took on the challenge of managing telemetry data from over 5,000 network devices. Picture 5,000 people talking all at once—it's chaos unless you know how to listen. Using Go and Kafka, I built a system that could handle this chatter and make sense of it.",
-                        "One of my key tasks was configuring a decoder to handle enterprise-specific data for over 170 network metrics. It wasn't built from scratch, but I made sure it worked perfectly for our needs. I also added a safety net—if the database ever went down, the system would save data to files so we wouldn't lose anything critical.",
-                        "With over 100GB of data flowing in every day, the system needed to be super reliable. I designed it to be fault-tolerant—if one part stopped working, another stepped in to keep things running. This setup helped us catch issues early and ensure smooth operations.",
+                        "At Prodapt, I helped improve how we handle and analyze massive amounts of network data. Working with information from over 5,000 devices felt like trying to understand 5,000 people talking all at once. So, I built a system using Go and Kafka to manage this smoothly.",
+                        "My job included setting up a decoder (not built from scratch, but customized) to process enterprise data across 170+ types of network telemetry information. I also added a safety net: if the database connection failed or data couldn't be saved, the system automatically stored the data in JSON files to prevent losses.",
+                        "With over 100GB of data processed daily, reliability was critical. I designed the system to self-heal. If one component failed, others stepped in to keep everything running. This lets us spot network issues early, maintaining stable and efficient services for users.",
                     ]
                 },
                 {
                     company: "Cognizant",
-                    position: "Software Engineer Intern",
+                    position: "Full Stack Engineer",
                     location: "Hyderabad, India",
                     dateRange: "Jan. 2022 - Jun. 2022",
                     content: [
-                        "At Cognizant, I worked on making real-time communication simple and seamless. I built a platform using WebSocket protocols that could handle 500+ users chatting at once—like hosting a giant virtual event where everyone's conversations flowed smoothly, no lag or hiccups.",
-                        "I also rolled up my sleeves to improve API performance. By adding Redis caching and connection pooling, I sped up response times big time. Imagine turning a crowded highway into one with express lanes—everything moves faster, and frequent users get even quicker access.",
-                        "Another cool project was modernizing the infrastructure. I moved things to microservices on Kubernetes and AWS, breaking down a big, clunky system into smaller, flexible pieces that were easier to manage and scale. Using AWS Lambda, EC2, and S3, we built something robust and ready for anything.",
+                        "At Cognizant, I tackled the problem of enabling smooth real-time communication for large groups. Using WebSocket technology, I created a platform that could handle 500+ users simultaneously. Imagine a virtual event where everyone chats smoothly without delays.",
+                        "A key achievement was boosting API speed. By adding Redis caching and connection pooling, responses became lightning-fast. It's like creating VIP lanes on a busy road: everyday users keep flowing, but repeat requests zip through quicker.",
+                        "I also contributed to updating our systems by adopting microservices powered by Kubernetes and AWS. This was like splitting a bulky, outdated machine into smaller, interchangeable parts that are easier to maintain and grow. We leveraged AWS Lambda for serverless tasks, building a setup that's both agile and strong enough to scale effortlessly.",
                     ]
                 },
 
