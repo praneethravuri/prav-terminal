@@ -34,7 +34,7 @@ export default {
                     company: "Cognizant",
                     position: "Full Stack Engineer",
                     location: "Hyderabad, India",
-                    dateRange: "Jan. 2022 - Jun. 2022",
+                    dateRange: "Jan. 2021 - Jun. 2022",
                     content: [
                         "At Cognizant, I tackled the problem of enabling smooth real-time communication for large groups. Using WebSocket technology, I created a platform that could handle 500+ users simultaneously. Imagine a virtual event where everyone chats smoothly without delays.",
                         "A key achievement was boosting API speed. By adding Redis caching and connection pooling, responses became lightning-fast. It's like creating VIP lanes on a busy road: everyday users keep flowing, but repeat requests zip through quicker.",
