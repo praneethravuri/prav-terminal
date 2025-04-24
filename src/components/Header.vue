@@ -7,7 +7,7 @@
             <span><a href="https://github.com/praneethravuri" target="_blank">Github</a></span> /
             <span><a href="https://www.linkedin.com/in/prav25/" target="_blank">LinkedIn</a></span> /
             <span><a href="mailto:pravdevrav@gmail.com">Email</a></span> /
-            <span><a href="https://docs.google.com/document/d/1WRFH23ZtdiQ4nyhasIPsxmqd8ntMUbu78mgkVt7RD8c/edit?usp=sharing"
+            <span><a href="https://docs.google.com/document/d/13zmtvKIO8r-_BnLpBqa9iE2vEi9C2leo/edit?usp=sharing&ouid=109109712910137947054&rtpof=true&sd=true"
                     target="_blank">Resume</a></span>
         </p>
     </div>
